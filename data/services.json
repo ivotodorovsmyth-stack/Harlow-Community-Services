@@ -1,0 +1,2580 @@
+{
+  "services": [
+    {
+      "id": "svc_001",
+      "category": "Addiction & Substance Misuse",
+      "name": "Essex Wellbeing Service",
+      "cost": "Free",
+      "summary": "Service Design: Users text \"SHOUT\" to 85258 to initiate a conversation. Keywords: round, clock coverage, clock, 85258, 85258 initiate.",
+      "keywords": [
+        "round",
+        "clock coverage",
+        "clock",
+        "85258",
+        "85258 initiate",
+        "text shout",
+        "text",
+        "service design",
+        "users text",
+        "round clock"
+      ],
+      "description": "Service Design: Users text \"SHOUT\" to 85258 to initiate a conversation. The service operates 24/7, providing round-the-clock coverage.   ",
+      "websites": [],
+      "phones": [
+        "0300 303 9988"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_002",
+      "category": "Addiction & Substance Misuse",
+      "name": "Frontline",
+      "cost": "Free",
+      "summary": "Therapeutic Model: The intervention is structured to move the texter from a \"hot moment\" of high distress to a \"cool calm.\" Trained… Keywords: supported clinical, supported, volunteers supported, calm trained, texter hot.",
+      "keywords": [
+        "supported clinical",
+        "supported",
+        "volunteers supported",
+        "calm trained",
+        "texter hot",
+        "cool calm",
+        "safe state",
+        "listening",
+        "reach",
+        "reach safe"
+      ],
+      "description": "Therapeutic Model: The intervention is structured to move the texter from a \"hot moment\" of high distress to a \"cool calm.\" Trained volunteers, supported by clinical supervisors, utilize active listening and planning techniques to help the user reach a safe state.   ",
+      "websites": [],
+      "phones": [
+        "01799 618 855"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_003",
+      "category": "Addiction & Substance Misuse",
+      "name": "Open Road",
+      "cost": "Free",
+      "summary": "the primary clinical hub for substance misuse in Harlow, operating from Unit 55 in The Harvey Centre. Keywords: medical, opiate, centre, treatment, prevent.",
+      "keywords": [
+        "medical",
+        "opiate",
+        "centre",
+        "treatment",
+        "prevent",
+        "access",
+        "access drop",
+        "including needle",
+        "program moving",
+        "access service"
+      ],
+      "description": "the primary clinical hub for substance misuse in Harlow, operating from Unit 55 in The Harvey Centre.   \n\nAccess: The service prioritizes low-barrier access through drop-in assessment times (Mon-Thurs: 9:30am–12pm & 1pm–4pm), allowing individuals to seek help at the moment of motivation.   \n\nHarm Reduction: The centre provides critical public health interventions, including a needle and syringe provision room to prevent blood-borne viruses, steroid packs, and Naloxone dispensing and training to prevent opiate overdose deaths.   \n\nTreatment Pathways: For opiate users, Open Road works in partnership with Essex STaRS at the Princess Alexandra Hospital (Derwent Centre), ensuring medical oversight for substitution therapy.   \n\nHolistic Support: Beyond medical treatment, the service offers one-to-one sessions, structured recovery programs, and the M-PACT program (Moving Parents and Children Together), which addresses the intergenerational impact of addiction",
+      "websites": [],
+      "phones": [
+        "01279 434621"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_004",
+      "category": "Addiction & Substance Misuse",
+      "name": "AL-Anon",
+      "cost": "Free",
+      "summary": "Support groups specifically for the families and friends of people with alcohol problems Keywords: alcohol problems, alcohol, friends people, groups specifically, people alcohol.",
+      "keywords": [
+        "alcohol problems",
+        "alcohol",
+        "friends people",
+        "groups specifically",
+        "people alcohol",
+        "specifically families",
+        "families friends",
+        "friends",
+        "problems",
+        "support groups"
+      ],
+      "description": "Support groups specifically for the families and friends of people with alcohol problems",
+      "websites": [],
+      "phones": [
+        "0800 0086 811"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_005",
+      "category": "Addiction & Substance Misuse",
+      "name": "Phoenix Futures",
+      "cost": "Free",
+      "summary": "This service operates at the intersection of criminal justice and health, supporting adults (18+) involved in the justice system who… Keywords: social inclusion, inclusion, justice, community, social.",
+      "keywords": [
+        "social inclusion",
+        "inclusion",
+        "justice",
+        "community",
+        "social",
+        "connecting users",
+        "involved justice",
+        "needs mechanism",
+        "appointments divert",
+        "18 involved"
+      ],
+      "description": "This service operates at the intersection of criminal justice and health, supporting adults (18+) involved in the justice system who have substance use needs.\n\nMechanism: It utilizes Conditional Cautions and Community Resolution appointments to divert individuals from custody into treatment.   \n\nSocial Inclusion: A key component is the \"Social Inclusion\" element, which is open to self-referral and focuses on connecting users with meaningful community activities to break the cycle of reoffending.",
+      "websites": [],
+      "phones": [
+        "0808 1000 110"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_006",
+      "category": "Addiction & Substance Misuse",
+      "name": "Essex Young People’s Drug and Alcohol Service (EYPDAS)",
+      "cost": "Free",
+      "summary": "Co-located with Open Road, EYPDAS offers age-appropriate interventions for those under 25. Keywords: interventions, group, road eypdas, trends, risks emerging.",
+      "keywords": [
+        "interventions",
+        "group",
+        "road eypdas",
+        "trends",
+        "risks emerging",
+        "risks",
+        "eypdas offers",
+        "eypdas",
+        "group work",
+        "support recovery"
+      ],
+      "description": "Co-located with Open Road, EYPDAS offers age-appropriate interventions for those under 25. This service acknowledges that youth addiction requires a different pedagogical and therapeutic approach.   \n\nInterventions: Support includes one-to-one counseling, telephone support, and the \"Recovery Pathway Group,\" a 6-week online course designed to educate young people on triggers and coping strategies.   \n\nEducation Link: The service delivers PSHE+ group work in schools, focusing on early intervention and the risks of emerging trends like illicit vaping.",
+      "websites": [],
+      "phones": [
+        "01245 493 311"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_007",
+      "category": "Addiction & Substance Misuse",
+      "name": "Smart Recovery",
+      "cost": "Free",
+      "summary": "online meetings to Building Motivation, Coping with Urges, Managing Thoughts/Feelings, and Living a Balanced Life Keywords: living balanced, managing thoughts, balanced life, thoughts, balanced.",
+      "keywords": [
+        "living balanced",
+        "managing thoughts",
+        "balanced life",
+        "thoughts",
+        "balanced",
+        "coping urges",
+        "meetings building",
+        "online meetings",
+        "building motivation",
+        "building"
+      ],
+      "description": "online meetings to Building Motivation, Coping with Urges, Managing Thoughts/Feelings, and Living a Balanced Life",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_008",
+      "category": "Support for Carers",
+      "name": "Action for Family Carers Essex",
+      "cost": "Free",
+      "summary": "the lead provider for West Essex (Harlow, Epping, Uttlesford). Keywords: day care, day, grants, care, 30.",
+      "keywords": [
+        "day care",
+        "day",
+        "grants",
+        "care",
+        "30",
+        "carers",
+        "providing",
+        "meets great",
+        "providing financial",
+        "centre 2nd"
+      ],
+      "description": "the lead provider for West Essex (Harlow, Epping, Uttlesford).\n\nCounselling: They offer a free, confidential counseling service (up to 6 sessions) to help carers manage the emotional toll of their role.   \n\nGrants: They facilitate \"Time 4 You\" grants, providing financial aid for carers to take a break or pursue a hobby.   \n\nSupport Groups: A Harlow support group meets at the Great Parndon Community Centre on the 2nd Tuesday of every month (10:30 am – 12:30 pm), providing peer connection.   \n\nDay Care: They operate day care services that provide a safe environment for the cared-for person, granting the carer essential respite.",
+      "websites": [],
+      "phones": [
+        "0300 770 80 90"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_009",
+      "category": "Support for Carers",
+      "name": "Carers First",
+      "cost": "Free",
+      "summary": "While Carers First is the lead for Mid/South Essex, they provide extensive online resources and the \"Caring Confidently\" training… Keywords: carers, wider region, region, resilience, resilience knowledge.",
+      "keywords": [
+        "carers",
+        "wider region",
+        "region",
+        "resilience",
+        "resilience knowledge",
+        "resources caring",
+        "mid south",
+        "mid",
+        "online resources",
+        "confidently"
+      ],
+      "description": "While Carers First is the lead for Mid/South Essex, they provide extensive online resources and the \"Caring Confidently\" training course, which helps carers build resilience and knowledge, accessible to all in the wider region.",
+      "websites": [],
+      "phones": [
+        "0300 303 1555"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_010",
+      "category": "Support for Carers",
+      "name": "Essex Carers Support",
+      "cost": "Free",
+      "summary": "Local wellbeing groups, counselling, and grants for adult family carers Keywords: grants adult, family carers, adult, adult family, counselling grants.",
+      "keywords": [
+        "grants adult",
+        "family carers",
+        "adult",
+        "adult family",
+        "counselling grants",
+        "local wellbeing",
+        "groups counselling",
+        "wellbeing groups",
+        "wellbeing",
+        "grants"
+      ],
+      "description": "Local wellbeing groups, counselling, and grants for adult family carers",
+      "websites": [],
+      "phones": [
+        "01255 474410"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_011",
+      "category": "Support for Carers",
+      "name": "Mobilise",
+      "cost": "Free",
+      "summary": "Recognizing that many carers cannot leave their homes, Mobilise offers a \"digital-first\" support system. Keywords: online, guides benefits, homes mobilise, model ensures, regardless mobility.",
+      "keywords": [
+        "online",
+        "guides benefits",
+        "homes mobilise",
+        "model ensures",
+        "regardless mobility",
+        "regardless",
+        "ensures support",
+        "mobility time",
+        "hub guides",
+        "benefits carer"
+      ],
+      "description": "Recognizing that many carers cannot leave their homes, Mobilise offers a \"digital-first\" support system.\n\nOfferings: An online hub with guides on benefits (e.g., Carer's Allowance), \"cuppas\" (scheduled online chats), and coaching calls. This model ensures support is accessible regardless of mobility or time constraints.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_012",
+      "category": "Support for Carers",
+      "name": "Essex Respite and Care Association",
+      "cost": "Means Tested",
+      "summary": "offers a specialized respite model. Keywords: respite model, carer leave, offers specialized, peace, peace mind.",
+      "keywords": [
+        "respite model",
+        "carer leave",
+        "offers specialized",
+        "peace",
+        "peace mind",
+        "person facility",
+        "specialized respite",
+        "facility provide",
+        "dementia allows",
+        "facility"
+      ],
+      "description": "offers a specialized respite model. Rather than removing the cared-for person to a facility, they provide one-to-one support in the home or community for adults with mental health needs or dementia. This allows the carer to leave the house with peace of mind.",
+      "websites": [],
+      "phones": [
+        "01245 353855"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_013",
+      "category": "Support for Carers",
+      "name": "Harlow Stroke Support Rehab",
+      "cost": "Charity Fee",
+      "summary": "Specialist rehabilitation and social support for both survivors and their carers Keywords: support survivors, survivors carers, specialist rehabilitation, survivors, rehabilitation.",
+      "keywords": [
+        "support survivors",
+        "survivors carers",
+        "specialist rehabilitation",
+        "survivors",
+        "rehabilitation",
+        "rehabilitation social",
+        "social support",
+        "specialist",
+        "carers",
+        "social"
+      ],
+      "description": "Specialist rehabilitation and social support for both survivors and their carers",
+      "websites": [],
+      "phones": [
+        "01279 308313"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_014",
+      "category": "Support for Carers",
+      "name": "Fibromyalgia Support Group Harlow",
+      "cost": "Free",
+      "summary": "Peer support for both sufferers and their carers Keywords: sufferers carers, sufferers, support sufferers, peer support, peer.",
+      "keywords": [
+        "sufferers carers",
+        "sufferers",
+        "support sufferers",
+        "peer support",
+        "peer",
+        "carers",
+        "support"
+      ],
+      "description": "Peer support for both sufferers and their carers",
+      "websites": [],
+      "phones": [
+        "0844 887 2466"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_015",
+      "category": "Support for Carers",
+      "name": "PACT",
+      "cost": "Free",
+      "summary": "Monthly meetings and connection for parents and carers of neurodiverse individuals in Harlow Keywords: monthly meetings, connection parents, carers neurodiverse, monthly, individuals harlow.",
+      "keywords": [
+        "monthly meetings",
+        "connection parents",
+        "carers neurodiverse",
+        "monthly",
+        "individuals harlow",
+        "parents carers",
+        "meetings connection",
+        "neurodiverse individuals",
+        "neurodiverse",
+        "parents"
+      ],
+      "description": "Monthly meetings and connection for parents and carers of neurodiverse individuals in Harlow",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_016",
+      "category": "Mental Health & Emotional Support",
+      "name": "Suicide attempt",
+      "cost": "Free",
+      "summary": "initiated or planned suicide attempt Keywords: suicide attempt, initiated, initiated planned, planned, planned suicide.",
+      "keywords": [
+        "suicide attempt",
+        "initiated",
+        "initiated planned",
+        "planned",
+        "planned suicide",
+        "attempt",
+        "suicide"
+      ],
+      "description": "initiated or planned suicide attempt ",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_017",
+      "category": "Mental Health & Emotional Support",
+      "name": "NHS 111",
+      "cost": "Free",
+      "summary": "For urgent mental health help and crisis support Keywords: help crisis, health help, urgent mental, urgent, crisis support.",
+      "keywords": [
+        "help crisis",
+        "health help",
+        "urgent mental",
+        "urgent",
+        "crisis support",
+        "crisis",
+        "help",
+        "mental health",
+        "mental",
+        "health"
+      ],
+      "description": "For urgent mental health help and crisis support",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_018",
+      "category": "Mental Health & Emotional Support",
+      "name": "Frontline",
+      "cost": "Mix",
+      "summary": "directory of mental and emotional health services including all kinds of abuse, children’s mental health, bereavement support, support… Keywords: mental, directory mental, directory, children mental, bereavement.",
+      "keywords": [
+        "mental",
+        "directory mental",
+        "directory",
+        "children mental",
+        "bereavement",
+        "mental emotional",
+        "kinds",
+        "emotional health",
+        "bereavement support",
+        "kinds abuse"
+      ],
+      "description": "directory of mental and emotional health services including all kinds of abuse, children’s mental health, bereavement support, support groups and activities",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_019",
+      "category": "Mental Health & Emotional Support",
+      "name": "Vita Minds West Essex",
+      "cost": "Free",
+      "summary": "Vita Health Group delivers the NHS Talking Therapies service (formerly IAPT) for West Essex. Keywords: service, digital, referral, 30 pm, pathways.",
+      "keywords": [
+        "service",
+        "digital",
+        "referral",
+        "30 pm",
+        "pathways",
+        "drop",
+        "gp",
+        "30",
+        "therapy",
+        "pm"
+      ],
+      "description": "Vita Health Group delivers the NHS Talking Therapies service (formerly IAPT) for West Essex. This service represents a significant shift towards patient autonomy through its \"self-referral\" model.\n\nEligibility: The service is open to anyone aged 16+ registered with a GP in Harlow, Uttlesford, or Epping Forest.   \n\nReferral Pathways: The traditional barrier of requiring a GP referral has been removed. Patients can refer themselves via:\n\nTelephone: A direct line (0333 015 2966) operates with extended hours (Mon–Thurs 8am–8pm, Fri 9am–5pm) to accommodate working adults.   \n\nDigital Assistant: An automated tool named \"Limbic\" on their website guides users through a clinical assessment to streamline intake.   \n\nPhysical Drop-in: To bridge the digital divide, a drop-in service is hosted at Harlow Library on the last Tuesday of every month (12:30 pm – 2:30 pm). This ensures that those without digital access or confidence can still enter the therapeutic pathway.   \n\nInterventions: The service offers a broad clinical menu, including Cognitive Behavioural Therapy (CBT), Interpersonal Therapy (IPT), Counselling for Depression, and specialized pathways for those whose mental health is impacted by long-term physical conditions. ",
+      "websites": [],
+      "phones": [
+        "0333 015 2966",
+        "0333 015 29 66"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_020",
+      "category": "Mental Health & Emotional Support",
+      "name": "Samaritans",
+      "cost": "Free",
+      "summary": "Eligibility: The service is open to anyone aged 16+ registered with a GP in Harlow, Uttlesford, or Epping Forest. Keywords: harlow uttlesford, uttlesford epping, open aged, gp harlow, registered gp.",
+      "keywords": [
+        "harlow uttlesford",
+        "uttlesford epping",
+        "open aged",
+        "gp harlow",
+        "registered gp",
+        "aged 16",
+        "16",
+        "16 registered",
+        "service open",
+        "forest"
+      ],
+      "description": "Eligibility: The service is open to anyone aged 16+ registered with a GP in Harlow, Uttlesford, or Epping Forest.   ",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_021",
+      "category": "Mental Health & Emotional Support",
+      "name": "Andy’s Man Club",
+      "cost": "Free",
+      "summary": "Addressing the critical issue of male suicide and the cultural stigma surrounding male mental health, Andy’s Man Club operates a strict… Keywords: critical, male, group, free, feature.",
+      "keywords": [
+        "critical",
+        "male",
+        "group",
+        "free",
+        "feature",
+        "speak rule",
+        "speak",
+        "rule",
+        "rule critical",
+        "lowering"
+      ],
+      "description": "Addressing the critical issue of male suicide and the cultural stigma surrounding male mental health, Andy’s Man Club operates a strict but effective peer-support model.\n\nOperations: The group meets every Monday at 7:00 pm (excluding Bank Holidays) at the Latton Bush Centre.   \n\nProtocol: The doors open at 18:45 to allow for settling in. The meetings are free, confidential, and require no booking or referral.   \n\nPhilosophy: The group is explicitly non-clinical and \"judgement-free,\" designed to provide a space where men can discuss the \"storms\" in their lives without pressure. The \"no obligation to speak\" rule is a critical design feature, lowering the anxiety threshold for new attendees.   \n",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_022",
+      "category": "Mental Health & Emotional Support",
+      "name": "Shout",
+      "cost": "Free",
+      "summary": "",
+      "keywords": [],
+      "description": "",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_023",
+      "category": "Mental Health & Emotional Support",
+      "name": "Hub of Hope",
+      "cost": "Free",
+      "summary": "Telephone: A direct line (0333 015 2966) operates with extended hours (Mon–Thurs 8am–8pm, Fri 9am–5pm) to accommodate working adults. Keywords: 9am 5pm, 9am, 2966 operates, 2966, 8pm fri.",
+      "keywords": [
+        "9am 5pm",
+        "9am",
+        "2966 operates",
+        "2966",
+        "8pm fri",
+        "8pm",
+        "8am 8pm",
+        "8am",
+        "accommodate working",
+        "fri 9am"
+      ],
+      "description": "Telephone: A direct line (0333 015 2966) operates with extended hours (Mon–Thurs 8am–8pm, Fri 9am–5pm) to accommodate working adults.   ",
+      "websites": [],
+      "phones": [
+        "0333 015 2966"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_024",
+      "category": "Mental Health & Emotional Support",
+      "name": "Employ-Ability",
+      "cost": "Free",
+      "summary": "Focusing on mental health, Employ-Ability uses the Individual Placement and Support (IPS) model. Keywords: ips, employment, mental, health, year olds.",
+      "keywords": [
+        "ips",
+        "employment",
+        "mental",
+        "health",
+        "year olds",
+        "employers ips",
+        "employers",
+        "health negotiating",
+        "health employ",
+        "uses individual"
+      ],
+      "description": "Focusing on mental health, Employ-Ability uses the Individual Placement and Support (IPS) model.\n\nJob Retention: They offer a specific service for those struggling to maintain employment due to mental ill health, negotiating \"reasonable adjustments\" with employers.   \n\nIPS-Y: A pilot program specifically targeting 14-18-year-olds in West Essex, bridging the gap between education and employment for vulnerable youth. ",
+      "websites": [],
+      "phones": [
+        "01279 450299"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_025",
+      "category": "Mental Health & Emotional Support",
+      "name": "West Essex Night Owls",
+      "cost": "Free",
+      "summary": "Physical Drop-in: To bridge the digital divide, a drop-in service is hosted at Harlow Library on the last Tuesday of every month (12:30… Keywords: 30 pm, drop, digital, 30, pm.",
+      "keywords": [
+        "30 pm",
+        "drop",
+        "digital",
+        "30",
+        "pm",
+        "enter therapeutic",
+        "enter",
+        "therapeutic pathway",
+        "hosted",
+        "hosted harlow"
+      ],
+      "description": "Physical Drop-in: To bridge the digital divide, a drop-in service is hosted at Harlow Library on the last Tuesday of every month (12:30 pm – 2:30 pm). This ensures that those without digital access or confidence can still enter the therapeutic pathway.   ",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_026",
+      "category": "Mental Health & Emotional Support",
+      "name": "Butterfly Effect Wellbeing",
+      "cost": "Mix",
+      "summary": "Located at \"The Bungalow\" in the Latton Bush Centre, this organization offers a holistic, activity-based approach to mental wellness. Keywords: 30pm, holistic, social, schedule, 11am.",
+      "keywords": [
+        "30pm",
+        "holistic",
+        "social",
+        "schedule",
+        "11am",
+        "based",
+        "activities",
+        "activity",
+        "groups",
+        "mental"
+      ],
+      "description": "Located at \"The Bungalow\" in the Latton Bush Centre, this organization offers a holistic, activity-based approach to mental wellness. It operates daily, providing a schedule that integrates social support with therapeutic activities.   \n\nActivity Schedule: The provision is diverse, including \"Social Wellbeing Groups\" (Mon/Wed/Fri 11am-2:30pm), \"Mindful Gardening\" (Tue 10am-12:30pm), and relaxation sessions for carers (Thu 11am-12pm).   \n\nHolistic Therapies: In addition to social groups, they offer sound healing (Gong Baths) and Reiki, recognizing the somatic aspects of mental distress.   \n\nEconomic Accessibility: While some treatments have a charge, many activities are free or donation-based, ensuring the service remains accessible to low-income residents.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_027",
+      "category": "Mental Health & Emotional Support",
+      "name": "Harlow Rainbow Services",
+      "cost": "Charity Fee",
+      "summary": "Interventions: The service offers a broad clinical menu, including Cognitive Behavioural Therapy (CBT), Interpersonal Therapy (IPT),… Keywords: therapy, menu including, depression, cbt interpersonal, behavioural.",
+      "keywords": [
+        "therapy",
+        "menu including",
+        "depression",
+        "cbt interpersonal",
+        "behavioural",
+        "interventions service",
+        "cognitive behavioural",
+        "cognitive",
+        "therapy ipt",
+        "cbt"
+      ],
+      "description": "Interventions: The service offers a broad clinical menu, including Cognitive Behavioural Therapy (CBT), Interpersonal Therapy (IPT), Counselling for Depression, and specialized pathways for those whose mental health is impacted by long-term physical conditions. ",
+      "websites": [],
+      "phones": [
+        "01279 308150"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_028",
+      "category": "Neurodiversity (ADHD, Autism, Learning Disability, etc)",
+      "name": "Frontline",
+      "cost": "Mix",
+      "summary": "Access Protocol: Access is controlled through a registration process. Keywords: hours, users, access, user registered, member night.",
+      "keywords": [
+        "hours",
+        "users",
+        "access",
+        "user registered",
+        "member night",
+        "risk assessment",
+        "owls",
+        "owls team",
+        "team conducts",
+        "ensures service"
+      ],
+      "description": "Access Protocol: Access is controlled through a registration process. Users must complete a form or scan a QR code to register, after which a member of the Night Owls team conducts a call-back within 24 hours. This triage step is crucial for risk assessment and ensures the service is appropriate for the user. Once registered, users are provided with a dedicated number to call at will during operating hours.   ",
+      "websites": [],
+      "phones": [
+        "01799 618 855"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_029",
+      "category": "Neurodiversity (ADHD, Autism, Learning Disability, etc)",
+      "name": "Neurodiversity Network",
+      "cost": "Free",
+      "summary": "Physical Sanctuary: Uniquely, registered users can access \"Sanctuary Spaces\" for face-to-face support between 4:00 pm and 11:00 pm. Keywords: sanctuary, face, team, crisis, 00 pm.",
+      "keywords": [
+        "sanctuary",
+        "face",
+        "team",
+        "crisis",
+        "00 pm",
+        "00",
+        "pm",
+        "physical",
+        "intervention required",
+        "listener"
+      ],
+      "description": "Physical Sanctuary: Uniquely, registered users can access \"Sanctuary Spaces\" for face-to-face support between 4:00 pm and 11:00 pm. This provision acknowledges that for many in crisis, the physical presence of a compassionate listener is more effective than remote communication. The Sanctuary team is trained to be non-judgmental and can escalate cases to the Crisis team if urgent clinical intervention is required",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_030",
+      "category": "Neurodiversity (ADHD, Autism, Learning Disability, etc)",
+      "name": "Together For Neurodiversity",
+      "cost": "Free",
+      "summary": "This organization focuses on practical empowerment. Keywords: spectrum, empowerment provide, grants spectrum, professionals understand, practical empowerment.",
+      "keywords": [
+        "spectrum",
+        "empowerment provide",
+        "grants spectrum",
+        "professionals understand",
+        "practical empowerment",
+        "packs containing",
+        "visual",
+        "visual aids",
+        "support packs",
+        "professionals"
+      ],
+      "description": "This organization focuses on practical empowerment. They provide \"Spectrum Support Packs\" containing sensory tools (ear defenders, weighted pads) and visual aids (Now/Next boards), which are heavily subsidized or funded by grants. Their \"Spectrum University\" offers online training to help families and professionals understand neurodiversity through a neuro-affirming lens.   \n",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_031",
+      "category": "Neurodiversity (ADHD, Autism, Learning Disability, etc)",
+      "name": "PACT",
+      "cost": "Free",
+      "summary": "Based in the Latton Bush Centre, PACT serves as a primary hub for the neurodiverse community. Keywords: parent, families, access, support, connect sessions.",
+      "keywords": [
+        "parent",
+        "families",
+        "access",
+        "support",
+        "connect sessions",
+        "wacky",
+        "wacky soft",
+        "walk",
+        "walk talk",
+        "support families"
+      ],
+      "description": "Based in the Latton Bush Centre, PACT serves as a primary hub for the neurodiverse community.\n\nOpen Access: They explicitly state that no formal diagnosis is required to access their services, ensuring immediate support for families in limbo.   \n\nActivities: The charity runs age-stratified social clubs, including \"Wild & Wacky\" soft play, \"Gamer’s Cage\" for teens, and \"Art Empower\" workshops.   \n\nParent Support: \"Parent/Carer Connect\" sessions and \"Walk and Talk\" events provide a peer support network, reducing the isolation often felt by SEND families.   \n\nAdvocacy: Their \"Signpost\" service assists with the complexities of Education, Health and Care Plans (EHCPs) and benefits, leveraging the \"lived experience\" of their staff",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_032",
+      "category": "Neurodiversity (ADHD, Autism, Learning Disability, etc)",
+      "name": "Harlow Rainbow Services",
+      "cost": "Charity Fee",
+      "summary": "A social group for neurodivergent adults to meet in Harlow Town Park Keywords: group neurodivergent, social group, meet harlow, adults meet, meet.",
+      "keywords": [
+        "group neurodivergent",
+        "social group",
+        "meet harlow",
+        "adults meet",
+        "meet",
+        "neurodivergent adults",
+        "park",
+        "town park",
+        "neurodivergent",
+        "harlow town"
+      ],
+      "description": "A social group for neurodivergent adults to meet in Harlow Town Park",
+      "websites": [],
+      "phones": [
+        "01279 308150"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_033",
+      "category": "Neurodiversity (ADHD, Autism, Learning Disability, etc)",
+      "name": "ECL Inclusive Employment",
+      "cost": "Free",
+      "summary": "operates across Essex to support adults with learning disabilities and autism into sustainable employment. Keywords: autism sustainable, coaching travel, disabilities autism, match, job coaching.",
+      "keywords": [
+        "autism sustainable",
+        "coaching travel",
+        "disabilities autism",
+        "match",
+        "job coaching",
+        "adults learning",
+        "methodology utilize",
+        "methodology",
+        "ensure long",
+        "autism"
+      ],
+      "description": "operates across Essex to support adults with learning disabilities and autism into sustainable employment.\n\nMethodology: They utilize \"vocational profiling\" to match individual skills to employer needs and provide job coaching and travel training to ensure long-term retention.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_034",
+      "category": "Neurodiversity (ADHD, Autism, Learning Disability, etc)",
+      "name": "Neurodiverse Boxing",
+      "cost": "Free",
+      "summary": "An innovative collaboration between Harlow Amateur Boxing Club and Active Essex provides free boxing lessons specifically for… Keywords: boxing, club, therapeutic, 00, boxing lessons.",
+      "keywords": [
+        "boxing",
+        "club",
+        "therapeutic",
+        "00",
+        "boxing lessons",
+        "harlow amateur",
+        "contact boxing",
+        "contact",
+        "focus",
+        "focus memory"
+      ],
+      "description": "An innovative collaboration between Harlow Amateur Boxing Club and Active Essex provides free boxing lessons specifically for neurodivergent individuals.\n\nSchedule: Saturdays at 11:00 am – 12:00 pm at the club on Momples Road.   \n\nTherapeutic Value: The program uses non-contact boxing to improve fitness, focus, memory, and coordination, demonstrating the therapeutic potential of sport.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_035",
+      "category": "Neurodiversity (ADHD, Autism, Learning Disability, etc)",
+      "name": "Families in Focus",
+      "cost": "Free",
+      "summary": "This charity provides the technical and legal scaffolding for families navigating the SEND system. Keywords: families, send, clubs, securing education, families navigating.",
+      "keywords": [
+        "families",
+        "send",
+        "clubs",
+        "securing education",
+        "families navigating",
+        "providing safe",
+        "scaffolding",
+        "scaffolding families",
+        "parents forms",
+        "guidance securing"
+      ],
+      "description": "This charity provides the technical and legal scaffolding for families navigating the SEND system.\n\nEducational Advocacy: They offer expert guidance on securing Education, Health and Care Plans (EHCPs), supporting families through the drafting process, annual reviews, and even tribunals.   \n\nBenefit Support: They assist with the complex applications for Disability Living Allowance (DLA) and Personal Independence Payment (PIP), often hosting online clinics to guide parents through the forms.   \n\nSocial Clubs: They run \"Saturday Activity Clubs\" (currently in Chelmsford) that are accessible to Harlow families, providing a safe space for SEND children and their siblings.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_036",
+      "category": "Neurodiversity (ADHD, Autism, Learning Disability, etc)",
+      "name": "NHS EPUT Patient Resources",
+      "cost": "Free",
+      "summary": "Clinical resources for neurodiversity and speech therapy Keywords: speech therapy, resources neurodiversity, neurodiversity speech, clinical resources, neurodiversity.",
+      "keywords": [
+        "speech therapy",
+        "resources neurodiversity",
+        "neurodiversity speech",
+        "clinical resources",
+        "neurodiversity",
+        "speech",
+        "resources",
+        "therapy",
+        "clinical"
+      ],
+      "description": "Clinical resources for neurodiversity and speech therapy",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_037",
+      "category": "Musculoskeletal Health",
+      "name": "Self-referral to Musculoskeletal Physiotherapy in West Essex",
+      "cost": "Free",
+      "summary": "Direct access to NHS physiotherapy for bone, joint, or muscle problems without needing a GP referral Keywords: muscle, muscle problems, access nhs, problems needing, direct access.",
+      "keywords": [
+        "muscle",
+        "muscle problems",
+        "access nhs",
+        "problems needing",
+        "direct access",
+        "bone joint",
+        "bone",
+        "joint",
+        "needing gp",
+        "nhs physiotherapy"
+      ],
+      "description": "Direct access to NHS physiotherapy for bone, joint, or muscle problems without needing a GP referral",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_038",
+      "category": "Musculoskeletal Health",
+      "name": "NHS EPUT Patient Resources",
+      "cost": "Free",
+      "summary": "Online clinical resources and guidance specifically for managing various MSK conditions Keywords: guidance specifically, online clinical, msk conditions, msk, resources guidance.",
+      "keywords": [
+        "guidance specifically",
+        "online clinical",
+        "msk conditions",
+        "msk",
+        "resources guidance",
+        "various",
+        "various msk",
+        "managing various",
+        "specifically managing",
+        "managing"
+      ],
+      "description": "Online clinical resources and guidance specifically for managing various MSK conditions",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_039",
+      "category": "Musculoskeletal Health",
+      "name": "Active Essex",
+      "cost": "Free",
+      "summary": "County-wide partnership promoting local sport, physical activity, and inclusive fitness tailored to your lifestyle Keywords: county, partnership promoting, promoting local, county wide, inclusive fitness.",
+      "keywords": [
+        "county",
+        "partnership promoting",
+        "promoting local",
+        "county wide",
+        "inclusive fitness",
+        "inclusive",
+        "tailored lifestyle",
+        "activity inclusive",
+        "local sport",
+        "wide partnership"
+      ],
+      "description": "County-wide partnership promoting local sport, physical activity, and inclusive fitness tailored to your lifestyle",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_040",
+      "category": "Musculoskeletal Health",
+      "name": "NHS Fitness Studio",
+      "cost": "Free",
+      "summary": "Online hub providing instructor-led exercise videos for different fitness levels and physical conditions Keywords: providing instructor, instructor led, instructor, videos different, led exercise.",
+      "keywords": [
+        "providing instructor",
+        "instructor led",
+        "instructor",
+        "videos different",
+        "led exercise",
+        "exercise videos",
+        "hub providing",
+        "levels physical",
+        "videos",
+        "different fitness"
+      ],
+      "description": "Online hub providing instructor-led exercise videos for different fitness levels and physical conditions",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_041",
+      "category": "Perinatal & Family Wellbeing",
+      "name": "Princess Alexandra Hospital Pelvic Health",
+      "cost": "Free",
+      "summary": "This NHS service represents a progressive approach to women's health. Keywords: women, pregnancy, pregnancy 12, supports experiencing, appointment.",
+      "keywords": [
+        "women",
+        "pregnancy",
+        "pregnancy 12",
+        "supports experiencing",
+        "appointment",
+        "prolapse pregnancy",
+        "prolapse",
+        "empowering",
+        "referral pathway",
+        "months postpartum"
+      ],
+      "description": "This NHS service represents a progressive approach to women's health. It supports those experiencing pelvic health issues (incontinence, prolapse) during pregnancy and up to 12 months postpartum.\n\nAccess: Uniquely, it offers a self-referral pathway via an online form, removing the need for a GP appointment and empowering women to seek help directly.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_042",
+      "category": "Perinatal & Family Wellbeing",
+      "name": "Essex Child & Family Wellbeing",
+      "cost": "Free",
+      "summary": "(Treehouse Family Hub) The Treehouse Family Hub (Parnall Road) is the central nerve centre for family services in Harlow. Keywords: family, hub, services, treehouse, family hub.",
+      "keywords": [
+        "family",
+        "hub",
+        "services",
+        "treehouse",
+        "family hub",
+        "treehouse family",
+        "sites",
+        "like",
+        "ensure neighborhood",
+        "central"
+      ],
+      "description": "(Treehouse Family Hub) The Treehouse Family Hub (Parnall Road) is the central nerve centre for family services in Harlow.   \n\nServices: It offers health visiting, infant feeding support, school nursing, and developmental checks.   \n\nDelivery Sites: Services are also delivered at satellite sites like The Meadows and Potter Street to ensure neighborhood-level access.   \n\nActivity: The hub hosts \"Healthy Family Drop-ins\" and specialized sessions like \"Sparkles\" for SEND children.",
+      "websites": [],
+      "phones": [
+        "0300 247 0013"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_043",
+      "category": "Perinatal & Family Wellbeing",
+      "name": "The Children’s Society",
+      "cost": "Free",
+      "summary": "Support for vulnerable children and families dealing with complex issues Keywords: complex issues, dealing, families dealing, vulnerable children, support vulnerable.",
+      "keywords": [
+        "complex issues",
+        "dealing",
+        "families dealing",
+        "vulnerable children",
+        "support vulnerable",
+        "dealing complex",
+        "children families",
+        "complex",
+        "vulnerable",
+        "issues"
+      ],
+      "description": "Support for vulnerable children and families dealing with complex issues",
+      "websites": [],
+      "phones": [
+        "0300 303 7000"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_044",
+      "category": "Perinatal & Family Wellbeing",
+      "name": "Families in Focus",
+      "cost": "Free",
+      "summary": "Advice and activity clubs for families with children who have special needs Keywords: special, special needs, children special, clubs families, advice activity.",
+      "keywords": [
+        "special",
+        "special needs",
+        "children special",
+        "clubs families",
+        "advice activity",
+        "families children",
+        "activity clubs",
+        "clubs",
+        "advice",
+        "activity"
+      ],
+      "description": "Advice and activity clubs for families with children who have special needs",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_045",
+      "category": "Perinatal & Family Wellbeing",
+      "name": "Home-Start Essex",
+      "cost": "Free",
+      "summary": "Home-Start supports families with children under 5 who are facing difficulties such as isolation, mental health issues, or multiple births. Keywords: families, home, groups, births, births home.",
+      "keywords": [
+        "families",
+        "home",
+        "groups",
+        "births",
+        "births home",
+        "parent child",
+        "start",
+        "start supports",
+        "bonding",
+        "issues multiple"
+      ],
+      "description": "Home-Start supports families with children under 5 who are facing difficulties such as isolation, mental health issues, or multiple births.\n\nHome Visiting: Trained volunteers visit families in their own homes to provide practical and emotional support.   \n\nGroups: They run \"Family Groups\" and \"Fitness and Fun\" sessions to encourage parent-child bonding and physical activity.   \n\nAccess: Families can self-refer via the website or telephone (01245 847410)",
+      "websites": [],
+      "phones": [
+        "01245 847410"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_046",
+      "category": "Perinatal & Family Wellbeing",
+      "name": "Harlow Library Services",
+      "cost": "Free",
+      "summary": "Free developmental activities that support literacy and socialization. Keywords: literacy socialization, literacy, free developmental, activities support, socialization.",
+      "keywords": [
+        "literacy socialization",
+        "literacy",
+        "free developmental",
+        "activities support",
+        "socialization",
+        "developmental activities",
+        "support literacy",
+        "developmental",
+        "activities",
+        "free"
+      ],
+      "description": "Free developmental activities that support literacy and socialization.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_047",
+      "category": "Perinatal & Family Wellbeing",
+      "name": "Mermaids",
+      "cost": "Free",
+      "summary": "Support for trans-gender children and their families Keywords: trans, support trans, trans gender, gender children, gender.",
+      "keywords": [
+        "trans",
+        "support trans",
+        "trans gender",
+        "gender children",
+        "gender",
+        "children families",
+        "families",
+        "children",
+        "support"
+      ],
+      "description": "Support for trans-gender children and their families",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_048",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "Citizen Advice Harlow Law Clinic",
+      "cost": "Free",
+      "summary": "Located in the town centre, this is the primary hub for independent advice. Keywords: law, law clinic, clinic, private counsel, advice law.",
+      "keywords": [
+        "law",
+        "law clinic",
+        "clinic",
+        "private counsel",
+        "advice law",
+        "standout service",
+        "covers family",
+        "hub independent",
+        "located town",
+        "minute telephone"
+      ],
+      "description": "Located in the town centre, this is the primary hub for independent advice.\n\nLaw Clinic: A standout service is the Law Clinic, which offers free 30-minute telephone appointments with volunteer solicitors. This covers family, employment, and immigration law, providing access to justice for those unable to afford private counsel. ",
+      "websites": [],
+      "phones": [
+        "01279 770189"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_049",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "Job Centre Plus",
+      "cost": "Free",
+      "summary": "Located at Beaufort House (Crown Gate), the Jobcentre manages Universal Credit claims and employment support. Keywords: 00, referral node, claimants partners, jobcentre manages, fri 00.",
+      "keywords": [
+        "00",
+        "referral node",
+        "claimants partners",
+        "jobcentre manages",
+        "fri 00",
+        "like employ",
+        "claims",
+        "claims employment",
+        "credit",
+        "credit claims"
+      ],
+      "description": "Located at Beaufort House (Crown Gate), the Jobcentre manages Universal Credit claims and employment support. It acts as a referral node, connecting claimants with partners like Employ-Ability for specialized support.   \n\nOpening Hours: Mon-Fri, 9:00 am – 5:00 pm (Wednesdays open at 10:00 am).",
+      "websites": [],
+      "phones": [
+        "0800 169 0190"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_050",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "Employ-Ability",
+      "cost": "Free",
+      "summary": "Focusing on mental health, Employ-Ability uses the Individual Placement and Support (IPS) model. Keywords: ips, employment, mental, health, year olds.",
+      "keywords": [
+        "ips",
+        "employment",
+        "mental",
+        "health",
+        "year olds",
+        "employers ips",
+        "employers",
+        "health negotiating",
+        "health employ",
+        "uses individual"
+      ],
+      "description": "Focusing on mental health, Employ-Ability uses the Individual Placement and Support (IPS) model.\n\nJob Retention: They offer a specific service for those struggling to maintain employment due to mental ill health, negotiating \"reasonable adjustments\" with employers.   \n\nIPS-Y: A pilot program specifically targeting 14-18-year-olds in West Essex, bridging the gap between education and employment for vulnerable youth. ",
+      "websites": [],
+      "phones": [
+        "01279 450299"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_051",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "Frontline",
+      "cost": "Mix",
+      "summary": "Support for training, CVs, and interviews Keywords: support training, interviews, training cvs, cvs, cvs interviews.",
+      "keywords": [
+        "support training",
+        "interviews",
+        "training cvs",
+        "cvs",
+        "cvs interviews",
+        "training",
+        "support"
+      ],
+      "description": "Support for training, CVs, and interviews",
+      "websites": [],
+      "phones": [
+        "01799 618 855"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_052",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "Adult Community Learning",
+      "cost": "Means Tested",
+      "summary": "Education courses; many are free for those on benefits Keywords: free benefits, courses, courses free, education courses, benefits.",
+      "keywords": [
+        "free benefits",
+        "courses",
+        "courses free",
+        "education courses",
+        "benefits",
+        "education",
+        "free"
+      ],
+      "description": "Education courses; many are free for those on benefits",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_053",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "Peabody Floating Support Service",
+      "cost": "Free",
+      "summary": "Peabody provides housing-related support to prevent homelessness before it occurs. Keywords: officers visit, plus, sessions locations, residents homes, housing related.",
+      "keywords": [
+        "officers visit",
+        "plus",
+        "sessions locations",
+        "residents homes",
+        "housing related",
+        "provides housing",
+        "peabody",
+        "jobcentre plus",
+        "hold",
+        "homelessness occurs"
+      ],
+      "description": "Peabody provides housing-related support to prevent homelessness before it occurs. Their \"floating support\" officers visit residents in their homes to assist with tenancy management, rent arrears, and budgeting. They also hold drop-in sessions at locations like Jobcentre Plus",
+      "websites": [],
+      "phones": [
+        "0800 288 8883"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_054",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "Streets2Homes",
+      "cost": "Free",
+      "summary": "Moves individuals from the streets into sustainable housing while addressing the health and social barriers that caused the homelessness Keywords: sustainable housing, caused, caused homelessness, barriers caused, barriers.",
+      "keywords": [
+        "sustainable housing",
+        "caused",
+        "caused homelessness",
+        "barriers caused",
+        "barriers",
+        "streets",
+        "streets sustainable",
+        "social barriers",
+        "moves",
+        "individuals streets"
+      ],
+      "description": "Moves individuals from the streets into sustainable housing while addressing the health and social barriers that caused the homelessness",
+      "websites": [],
+      "phones": [
+        "01279 430011"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_055",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "Integration Support Services",
+      "cost": "Free",
+      "summary": "ital for Harlow’s migrant and refugee population. Keywords: social integration, creating safe, club tuesdays, applications social, creating.",
+      "keywords": [
+        "social integration",
+        "creating safe",
+        "club tuesdays",
+        "applications social",
+        "creating",
+        "population",
+        "population casework",
+        "esol english",
+        "esol",
+        "refugee"
+      ],
+      "description": "ital for Harlow’s migrant and refugee population.\n\nCasework: They provide one-to-one support for housing, benefits, and school applications.   \n\nSocial Integration: They run ESOL (English) classes and the \"Women's Health Club\" (Tuesdays 11am-1pm at Latton Bush), creating safe spaces for new arrivals to build networks.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_056",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "Harlow Warm Spaces",
+      "cost": "Free",
+      "summary": "In response to energy poverty, Harlow Council has designated venues like Harlow Playhouse and local libraries as \"Warm Spaces.\" These… Keywords: harlow, seating, winter, winter months, refuge winter.",
+      "keywords": [
+        "harlow",
+        "seating",
+        "winter",
+        "winter months",
+        "refuge winter",
+        "non stigmatizing",
+        "energy poverty",
+        "like harlow",
+        "energy",
+        "heat"
+      ],
+      "description": "In response to energy poverty, Harlow Council has designated venues like Harlow Playhouse and local libraries as \"Warm Spaces.\" These locations offer heat, seating, and sometimes hot drinks, providing a non-stigmatizing refuge during winter months.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_057",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "Harlow Foodbank",
+      "cost": "Free",
+      "summary": "Emergency food parcels in Harlow Town Centre Keywords: parcels, parcels harlow, emergency food, food parcels, food.",
+      "keywords": [
+        "parcels",
+        "parcels harlow",
+        "emergency food",
+        "food parcels",
+        "food",
+        "town centre",
+        "emergency",
+        "harlow town",
+        "town",
+        "centre"
+      ],
+      "description": "Emergency food parcels in Harlow Town Centre",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": "41 The Harvey Centre, CM20 1LS"
+    },
+    {
+      "id": "svc_058",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "Salvation Army Food Bank",
+      "cost": "Free",
+      "summary": "Emergency supplies and community support Keywords: emergency supplies, community support, supplies, supplies community, emergency.",
+      "keywords": [
+        "emergency supplies",
+        "community support",
+        "supplies",
+        "supplies community",
+        "emergency",
+        "community",
+        "support"
+      ],
+      "description": "Emergency supplies and community support ",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": "Tendring Road, CM18 6RN"
+    },
+    {
+      "id": "svc_059",
+      "category": "Work, Money & Housing and Food Banks",
+      "name": "The Fridge",
+      "cost": "Adults £2, Kids Free",
+      "summary": "Access to fresh surplus food (fruit, veg, bread) donated by local supermarkets Keywords: fruit veg, supermarkets, fruit, food fruit, local supermarkets.",
+      "keywords": [
+        "fruit veg",
+        "supermarkets",
+        "fruit",
+        "food fruit",
+        "local supermarkets",
+        "veg",
+        "veg bread",
+        "fresh surplus",
+        "fresh",
+        "bread"
+      ],
+      "description": "Access to fresh surplus food (fruit, veg, bread) donated by local supermarkets",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": "Thursdays 5:30 PM – 8:00 PM at St Paul’s Church, College Square, CM20 1LP"
+    },
+    {
+      "id": "svc_060",
+      "category": "Safety & Abuse",
+      "name": "Compass Essex",
+      "cost": "Free",
+      "summary": "Single point of access for victims of domestic abuse to find support and refuge Keywords: point, point access, access victims, support refuge, single point.",
+      "keywords": [
+        "point",
+        "point access",
+        "access victims",
+        "support refuge",
+        "single point",
+        "single",
+        "victims",
+        "victims domestic",
+        "abuse support",
+        "domestic abuse"
+      ],
+      "description": "Single point of access for victims of domestic abuse to find support and refuge",
+      "websites": [],
+      "phones": [
+        "0330 333 7444"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_061",
+      "category": "Safety & Abuse",
+      "name": "Safer Places",
+      "cost": "Free",
+      "summary": "Specialist domestic abuse charity providing housing, safety planning, and outreach Keywords: abuse charity, safety planning, specialist domestic, planning outreach, charity providing.",
+      "keywords": [
+        "abuse charity",
+        "safety planning",
+        "specialist domestic",
+        "planning outreach",
+        "charity providing",
+        "providing housing",
+        "housing safety",
+        "outreach",
+        "planning",
+        "charity"
+      ],
+      "description": "Specialist domestic abuse charity providing housing, safety planning, and outreach",
+      "websites": [],
+      "phones": [
+        "0330 0102 5811"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_062",
+      "category": "Safety & Abuse",
+      "name": "Women’s Aid",
+      "cost": "Free",
+      "summary": "Confidential support and information for women experiencing domestic violence and their children Keywords: women experiencing, confidential support, support information, experiencing domestic, domestic violence.",
+      "keywords": [
+        "women experiencing",
+        "confidential support",
+        "support information",
+        "experiencing domestic",
+        "domestic violence",
+        "violence children",
+        "violence",
+        "information women",
+        "experiencing",
+        "confidential"
+      ],
+      "description": "Confidential support and information for women experiencing domestic violence and their children",
+      "websites": [],
+      "phones": [
+        "0808 2000 247"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_063",
+      "category": "Safety & Abuse",
+      "name": "Forced Marriage Unit",
+      "cost": "Free",
+      "summary": "Specialist advice and assistance for those facing or in a forced marriage Keywords: advice assistance, forced, assistance facing, marriage, forced marriage.",
+      "keywords": [
+        "advice assistance",
+        "forced",
+        "assistance facing",
+        "marriage",
+        "forced marriage",
+        "facing forced",
+        "specialist advice",
+        "facing",
+        "assistance",
+        "specialist"
+      ],
+      "description": "Specialist advice and assistance for those facing or in a forced marriage",
+      "websites": [],
+      "phones": [
+        "020 7008 0151"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_064",
+      "category": "Safety & Abuse",
+      "name": "Karma Nirvana",
+      "cost": "Free",
+      "summary": "Honour-based abuse helpline Keywords: abuse helpline, honour, honour based, based abuse, helpline.",
+      "keywords": [
+        "abuse helpline",
+        "honour",
+        "honour based",
+        "based abuse",
+        "helpline",
+        "based",
+        "abuse"
+      ],
+      "description": "Honour-based abuse helpline",
+      "websites": [],
+      "phones": [
+        "0800 5999 247"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_065",
+      "category": "Safety & Abuse",
+      "name": "LGBTQ+ Domestic Abuse - Galop",
+      "cost": "Free",
+      "summary": "Tailored domestic abuse support specifically for the LGBTQ+ community Keywords: support specifically, specifically lgbtq, lgbtq, lgbtq community, tailored domestic.",
+      "keywords": [
+        "support specifically",
+        "specifically lgbtq",
+        "lgbtq",
+        "lgbtq community",
+        "tailored domestic",
+        "abuse support",
+        "tailored",
+        "domestic abuse",
+        "domestic",
+        "abuse"
+      ],
+      "description": "Tailored domestic abuse support specifically for the LGBTQ+ community ",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_066",
+      "category": "Safety & Abuse",
+      "name": "Respect",
+      "cost": "Free",
+      "summary": "Structured intervention aimed at helping individuals who have committed domestic abuse to change their behaviour and promote safety for… Keywords: aimed helping, aimed, helping, helping individuals, promote safety.",
+      "keywords": [
+        "aimed helping",
+        "aimed",
+        "helping",
+        "helping individuals",
+        "promote safety",
+        "structured intervention",
+        "intervention aimed",
+        "committed",
+        "safety survivors",
+        "individuals committed"
+      ],
+      "description": "Structured intervention aimed at helping individuals who have committed domestic abuse to change their behaviour and promote safety for survivors",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_067",
+      "category": "Safety & Abuse",
+      "name": "Harlow Warm Spaces",
+      "cost": "Free",
+      "summary": "In response to energy poverty, Harlow Council has designated venues like Harlow Playhouse and local libraries as \"Warm Spaces.\" These… Keywords: harlow, seating, winter, winter months, refuge winter.",
+      "keywords": [
+        "harlow",
+        "seating",
+        "winter",
+        "winter months",
+        "refuge winter",
+        "non stigmatizing",
+        "energy poverty",
+        "like harlow",
+        "energy",
+        "heat"
+      ],
+      "description": "In response to energy poverty, Harlow Council has designated venues like Harlow Playhouse and local libraries as \"Warm Spaces.\" These locations offer heat, seating, and sometimes hot drinks, providing a non-stigmatizing refuge during winter months.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_068",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "West Essex Falls Car",
+      "cost": "Free",
+      "summary": "Rapid response service operates 08:00–20:00, 7 days a week. Keywords: 00, homes conducting, fallers, admissions, conducting.",
+      "keywords": [
+        "00",
+        "homes conducting",
+        "fallers",
+        "admissions",
+        "conducting",
+        "immediate assessments",
+        "unnecessary",
+        "00 days",
+        "conducting immediate",
+        "paramedic"
+      ],
+      "description": "Rapid response service operates 08:00–20:00, 7 days a week. It deploys a paramedic and therapist to uninjured fallers in their homes, conducting immediate assessments to prevent unnecessary hospital admissions.",
+      "websites": [],
+      "phones": [
+        "0300 123 5433"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_069",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "Community Falls Strength and Balance Exercise Service",
+      "cost": "Free",
+      "summary": "Run by NELFT, this service provides 12-week exercise programs designed to improve stability in older adults, addressing the root cause… Keywords: improve stability, service provides, run nelft, falls, older adults.",
+      "keywords": [
+        "improve stability",
+        "service provides",
+        "run nelft",
+        "falls",
+        "older adults",
+        "addressing root",
+        "12 week",
+        "exercise programs",
+        "stability older",
+        "stability"
+      ],
+      "description": "Run by NELFT, this service provides 12-week exercise programs designed to improve stability in older adults, addressing the root cause of falls.",
+      "websites": [],
+      "phones": [
+        "0300 300 1843"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_070",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "Epping Forest Community Transport",
+      "cost": "Charity Fee",
+      "summary": "Door-to-door transport for those with mobility needs Keywords: door, transport mobility, door transport, door door, transport.",
+      "keywords": [
+        "door",
+        "transport mobility",
+        "door transport",
+        "door door",
+        "transport",
+        "mobility needs",
+        "mobility",
+        "needs"
+      ],
+      "description": "Door-to-door transport for those with mobility needs",
+      "websites": [],
+      "phones": [
+        "01992 579556"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_071",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "Essex County Council",
+      "cost": "Means Tested",
+      "summary": "Free/Means-tested: Help with meals, shopping, home adaptations, and technology for independent living Keywords: free means, tested, tested help, means tested, means.",
+      "keywords": [
+        "free means",
+        "tested",
+        "tested help",
+        "means tested",
+        "means",
+        "home adaptations",
+        "independent living",
+        "adaptations",
+        "adaptations technology",
+        "meals shopping"
+      ],
+      "description": "Free/Means-tested: Help with meals, shopping, home adaptations, and technology for independent living ",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_072",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "Essex Wellbeing Service",
+      "cost": "Free",
+      "summary": "Provides free NHS health checks for eligible residents aged 40–74 and lifestyle assessments Keywords: 74 lifestyle, 74, lifestyle assessments, free nhs, health checks.",
+      "keywords": [
+        "74 lifestyle",
+        "74",
+        "lifestyle assessments",
+        "free nhs",
+        "health checks",
+        "aged 40",
+        "40",
+        "residents aged",
+        "checks eligible",
+        "40 74"
+      ],
+      "description": "Provides free NHS health checks for eligible residents aged 40–74 and lifestyle assessments",
+      "websites": [],
+      "phones": [
+        "0300 303 9988"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_073",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "Frontline",
+      "cost": "Mix",
+      "summary": "List of local support for older people, including help to live independently, dementia and memory‑support services, day centres, safety… Keywords: loneliness mobility, home befriending, services day, safety checks, help live.",
+      "keywords": [
+        "loneliness mobility",
+        "home befriending",
+        "services day",
+        "safety checks",
+        "help live",
+        "mobility equipment",
+        "reduce loneliness",
+        "support services",
+        "wheelchairs health",
+        "checks home"
+      ],
+      "description": "List of local support for older people, including help to live independently, dementia and memory‑support services, day centres, safety checks at home, befriending to reduce loneliness, mobility equipment like wheelchairs, and other health, wellbeing and social care advice",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_074",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "Age Well East",
+      "cost": "Free",
+      "summary": "Befriending, social clubs, and support for older people to maintain independence and connection Keywords: maintain independence, clubs support, independence connection, befriending social, people maintain.",
+      "keywords": [
+        "maintain independence",
+        "clubs support",
+        "independence connection",
+        "befriending social",
+        "people maintain",
+        "befriending",
+        "older people",
+        "support older",
+        "social clubs",
+        "older"
+      ],
+      "description": "Befriending, social clubs, and support for older people to maintain independence and connection",
+      "websites": [],
+      "phones": [
+        "0300 373 3333"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_075",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "Generation Circus Over 50s",
+      "cost": "Free",
+      "summary": "Fun, circus-inspired fitness focusing on balance, strength, and coordination specifically for those aged 50 and over Keywords: strength, strength coordination, circus inspired, focusing balance, circus.",
+      "keywords": [
+        "strength",
+        "strength coordination",
+        "circus inspired",
+        "focusing balance",
+        "circus",
+        "coordination specifically",
+        "balance strength",
+        "50",
+        "balance",
+        "fun circus"
+      ],
+      "description": "Fun, circus-inspired fitness focusing on balance, strength, and coordination specifically for those aged 50 and over",
+      "websites": [],
+      "phones": [
+        "07460 514214"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_076",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "Harlow Walking Groups",
+      "cost": "Free",
+      "summary": "Volunteer-led community walks for all fitness levels to improve health and socialise Keywords: walks, walks fitness, improve health, levels improve, community walks.",
+      "keywords": [
+        "walks",
+        "walks fitness",
+        "improve health",
+        "levels improve",
+        "community walks",
+        "health socialise",
+        "led community",
+        "volunteer led",
+        "socialise",
+        "levels"
+      ],
+      "description": "Volunteer-led community walks for all fitness levels to improve health and socialise",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_077",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "Digital Share",
+      "cost": "Free",
+      "summary": "this project provides the hardware and skills necessary for modern life. Keywords: skills, library, green, email online, using.",
+      "keywords": [
+        "skills",
+        "library",
+        "green",
+        "email online",
+        "using",
+        "using nhs",
+        "email",
+        "available troubleshoot",
+        "safety support",
+        "nhs app"
+      ],
+      "description": "this project provides the hardware and skills necessary for modern life.\n\nProvision: They distribute donated devices and SIM cards with data to those in need.   \n\nEducation: \"Digital Skills Hubs\" at Harlow Town Library and Tye Green Library offer training on using the NHS app, setting up email, and online safety.   \n\nSupport: Volunteer \"Tech Advisors\" are available to troubleshoot specific issues.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_078",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "Harlow Warm Spaces",
+      "cost": "Free",
+      "summary": "In response to energy poverty, Harlow Council has designated venues like Harlow Playhouse and local libraries as \"Warm Spaces.\" These… Keywords: harlow, seating, winter, winter months, refuge winter.",
+      "keywords": [
+        "harlow",
+        "seating",
+        "winter",
+        "winter months",
+        "refuge winter",
+        "non stigmatizing",
+        "energy poverty",
+        "like harlow",
+        "energy",
+        "heat"
+      ],
+      "description": "In response to energy poverty, Harlow Council has designated venues like Harlow Playhouse and local libraries as \"Warm Spaces.\" These locations offer heat, seating, and sometimes hot drinks, providing a non-stigmatizing refuge during winter months.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_079",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "Harlow Rainbow Services",
+      "cost": "Free",
+      "summary": "Rainbow Services is a cornerstone of Harlow's voluntary sector. Keywords: community, project, residents, hub, social.",
+      "keywords": [
+        "community",
+        "project",
+        "residents",
+        "hub",
+        "social",
+        "matters project",
+        "matters",
+        "cornerstone",
+        "cornerstone harlow",
+        "project connecting"
+      ],
+      "description": "Rainbow Services is a cornerstone of Harlow's voluntary sector.\n\nCommunity Hub: Located in the Harvey Centre and Wych Elm, this hub acts as a physical \"front door\" for crisis support, volunteering information, and signposting.   \n\nCommunity Builder: This project actively supports residents in setting up their own social groups, shifting the dynamic from \"service delivery\" to \"community empowerment\".   \n\nSocial Prescribing: They manage the \"My Health Matters\" project, connecting residents with non-clinical support for issues like loneliness.",
+      "websites": [],
+      "phones": [
+        "01279 308150"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_080",
+      "category": "Age Related Needs (Mobility, Lifestyle, Care, Community)",
+      "name": "British Red Cross",
+      "cost": "Paid",
+      "summary": "For temporary mobility needs, the Red Cross in Harlow provides a wheelchair hire service. Keywords: hire, fee 30, pay gp, access assistance, pay.",
+      "keywords": [
+        "hire",
+        "fee 30",
+        "pay gp",
+        "access assistance",
+        "pay",
+        "provides wheelchair",
+        "harlow provides",
+        "cross",
+        "cross harlow",
+        "fee"
+      ],
+      "description": "For temporary mobility needs, the Red Cross in Harlow provides a wheelchair hire service.\n\nCost: Standard hire is £22 per week, with a delivery/collection fee of £30.   \n\nAccess: Assistance is available for those unable to pay, and no GP referral is required, ensuring rapid deployment for post-operative recovery or end-of-life care",
+      "websites": [],
+      "phones": [
+        "0300 456 1914"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_081",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "Frontline",
+      "cost": "Mix",
+      "summary": "List of services for physical/sensory disabilities, long-term conditions, and SEND, including equipment like wheelchairs, everyday… Keywords: everyday, living benefits, physical sensory, benefits advice, disabilities long.",
+      "keywords": [
+        "everyday",
+        "living benefits",
+        "physical sensory",
+        "benefits advice",
+        "disabilities long",
+        "wheelchairs everyday",
+        "term conditions",
+        "sensory disabilities",
+        "services physical",
+        "send including"
+      ],
+      "description": "List of services for physical/sensory disabilities, long-term conditions, and SEND, including equipment like wheelchairs, everyday living and benefits advice",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_082",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "West Essex Falls Car",
+      "cost": "Free",
+      "summary": "Rapid response service operates 08:00–20:00, 7 days a week. Keywords: 00, homes conducting, fallers, admissions, conducting.",
+      "keywords": [
+        "00",
+        "homes conducting",
+        "fallers",
+        "admissions",
+        "conducting",
+        "immediate assessments",
+        "unnecessary",
+        "00 days",
+        "conducting immediate",
+        "paramedic"
+      ],
+      "description": "Rapid response service operates 08:00–20:00, 7 days a week. It deploys a paramedic and therapist to uninjured fallers in their homes, conducting immediate assessments to prevent unnecessary hospital admissions.",
+      "websites": [],
+      "phones": [
+        "0300 123 5433"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_083",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "Living Made Easy",
+      "cost": "Free",
+      "summary": "Advice and equipment directories for staying physically independent at home Keywords: physically independent, directories, directories staying, physically, equipment directories.",
+      "keywords": [
+        "physically independent",
+        "directories",
+        "directories staying",
+        "physically",
+        "equipment directories",
+        "staying physically",
+        "independent home",
+        "advice equipment",
+        "staying",
+        "equipment"
+      ],
+      "description": "Advice and equipment directories for staying physically independent at home",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_084",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "British Red Cross",
+      "cost": "Paid",
+      "summary": "For temporary mobility needs, the Red Cross in Harlow provides a wheelchair hire service. Keywords: hire, fee 30, pay gp, access assistance, pay.",
+      "keywords": [
+        "hire",
+        "fee 30",
+        "pay gp",
+        "access assistance",
+        "pay",
+        "provides wheelchair",
+        "harlow provides",
+        "cross",
+        "cross harlow",
+        "fee"
+      ],
+      "description": "For temporary mobility needs, the Red Cross in Harlow provides a wheelchair hire service.\n\nCost: Standard hire is £22 per week, with a delivery/collection fee of £30.   \n\nAccess: Assistance is available for those unable to pay, and no GP referral is required, ensuring rapid deployment for post-operative recovery or end-of-life care",
+      "websites": [],
+      "phones": [
+        "0300 456 1914"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_085",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "Accuro",
+      "cost": "Charity Fee",
+      "summary": "specializes in leisure and social opportunities for people with disabilities Keywords: social opportunities, leisure social, specializes leisure, specializes, opportunities.",
+      "keywords": [
+        "social opportunities",
+        "leisure social",
+        "specializes leisure",
+        "specializes",
+        "opportunities",
+        "opportunities people",
+        "people disabilities",
+        "leisure",
+        "disabilities",
+        "people"
+      ],
+      "description": "specializes in leisure and social opportunities for people with disabilities",
+      "websites": [],
+      "phones": [
+        "01279 870297"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_086",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "CanalAbility",
+      "cost": "Charity Fee",
+      "summary": "Located on the River Stort, CanalAbility offers a unique accessible leisure experience. Keywords: stort, accessible, users complex, actively participate, inclusivity design.",
+      "keywords": [
+        "stort",
+        "accessible",
+        "users complex",
+        "actively participate",
+        "inclusivity design",
+        "inclusivity",
+        "unique accessible",
+        "promoting agency",
+        "equipped lifts",
+        "agency"
+      ],
+      "description": "Located on the River Stort, CanalAbility offers a unique accessible leisure experience.\n\nInfrastructure: They operate purpose-built broad beam boats (\"Stort Daybreak\" and \"Stort Challenger\") equipped with lifts, ramps, and accessible toilets.   \n\nInclusivity: The design allows wheelchair users and those with complex disabilities to actively participate in steering the boat and operating locks, promoting agency and independence. ",
+      "websites": [],
+      "phones": [
+        "01279 424444"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_087",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "Accessible Swimming Pool",
+      "cost": "Paid",
+      "summary": "The town's primary leisure centre is equipped with \"wet rooms\" and pool hoists, enabling fully accessible swimming for residents with… Keywords: primary leisure, fully accessible, residents physical, fully, centre equipped.",
+      "keywords": [
+        "primary leisure",
+        "fully accessible",
+        "residents physical",
+        "fully",
+        "centre equipped",
+        "pool hoists",
+        "pool",
+        "town primary",
+        "physical disabilities",
+        "enabling fully"
+      ],
+      "description": "The town's primary leisure centre is equipped with \"wet rooms\" and pool hoists, enabling fully accessible swimming for residents with physical disabilities.",
+      "websites": [],
+      "phones": [
+        "01279 621500"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_088",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "NHS EPUT Patient Resources",
+      "cost": "Free",
+      "summary": "Clinical resources for neurodiversity and speech therapy Keywords: speech therapy, resources neurodiversity, neurodiversity speech, clinical resources, neurodiversity.",
+      "keywords": [
+        "speech therapy",
+        "resources neurodiversity",
+        "neurodiversity speech",
+        "clinical resources",
+        "neurodiversity",
+        "speech",
+        "resources",
+        "therapy",
+        "clinical"
+      ],
+      "description": "Clinical resources for neurodiversity and speech therapy",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_089",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "Essex County Council",
+      "cost": "Means Tested",
+      "summary": "Help with meals, shopping, home adaptations, and technology for independent living Keywords: shopping home, shopping, independent living, home adaptations, adaptations.",
+      "keywords": [
+        "shopping home",
+        "shopping",
+        "independent living",
+        "home adaptations",
+        "adaptations",
+        "adaptations technology",
+        "meals shopping",
+        "technology",
+        "technology independent",
+        "help meals"
+      ],
+      "description": "Help with meals, shopping, home adaptations, and technology for independent living ",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_090",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "Harlow Stroke Support Rehab",
+      "cost": "Charity Fee",
+      "summary": "Specialist rehabilitation and social support Keywords: rehabilitation social, specialist rehabilitation, rehabilitation, social support, specialist.",
+      "keywords": [
+        "rehabilitation social",
+        "specialist rehabilitation",
+        "rehabilitation",
+        "social support",
+        "specialist",
+        "social",
+        "support"
+      ],
+      "description": "Specialist rehabilitation and social support",
+      "websites": [],
+      "phones": [
+        "01279 308313"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_091",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "Neuro Rehabilitation Online Clinic",
+      "cost": "Free",
+      "summary": "online one-to-one and group therapy for adults with neurological conditions (e.g., brain injury). Keywords: online group, therapy adults, conditions brain, group therapy, memory fatigue.",
+      "keywords": [
+        "online group",
+        "therapy adults",
+        "conditions brain",
+        "group therapy",
+        "memory fatigue",
+        "injury focuses",
+        "speech memory",
+        "brain",
+        "brain injury",
+        "fatigue"
+      ],
+      "description": "online one-to-one and group therapy for adults with neurological conditions (e.g., brain injury). It focuses on speech, memory, and fatigue management.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_092",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "Parkinson’s UK Harlow Support",
+      "cost": "Free",
+      "summary": "Weekly meetings and specialist advice Keywords: meetings specialist, weekly, weekly meetings, specialist advice, meetings.",
+      "keywords": [
+        "meetings specialist",
+        "weekly",
+        "weekly meetings",
+        "specialist advice",
+        "meetings",
+        "specialist",
+        "advice"
+      ],
+      "description": "Weekly meetings and specialist advice",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_093",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "MS Society East Herts/West Essex",
+      "cost": "Free",
+      "summary": "Support, grants, and information Keywords: grants information, support grants, information, grants, support.",
+      "keywords": [
+        "grants information",
+        "support grants",
+        "information",
+        "grants",
+        "support"
+      ],
+      "description": "Support, grants, and information",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_094",
+      "category": "Physical Disability & Neurological Conditions",
+      "name": "Employ-Ability",
+      "cost": "Free",
+      "summary": "Focusing on mental health, Employ-Ability uses the Individual Placement and Support (IPS) model. Keywords: ips, employment, mental, health, year olds.",
+      "keywords": [
+        "ips",
+        "employment",
+        "mental",
+        "health",
+        "year olds",
+        "employers ips",
+        "employers",
+        "health negotiating",
+        "health employ",
+        "uses individual"
+      ],
+      "description": "Focusing on mental health, Employ-Ability uses the Individual Placement and Support (IPS) model.\n\nJob Retention: They offer a specific service for those struggling to maintain employment due to mental ill health, negotiating \"reasonable adjustments\" with employers.   \n\nIPS-Y: A pilot program specifically targeting 14-18-year-olds in West Essex, bridging the gap between education and employment for vulnerable youth. ",
+      "websites": [],
+      "phones": [
+        "01279 450299"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_095",
+      "category": "Loneliness & Community Connections",
+      "name": "Essex Wellbeing Service",
+      "cost": "Free",
+      "summary": "Online or telephone assessment for any needs Keywords: online telephone, telephone assessment, assessment needs, assessment, telephone.",
+      "keywords": [
+        "online telephone",
+        "telephone assessment",
+        "assessment needs",
+        "assessment",
+        "telephone",
+        "needs",
+        "online"
+      ],
+      "description": "Online or telephone assessment for any needs",
+      "websites": [],
+      "phones": [
+        "0300 303 9988"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_096",
+      "category": "Loneliness & Community Connections",
+      "name": "Hospital Discharge Support",
+      "cost": "Free",
+      "summary": "Hot meals delivery, regular phone calls, moving furniture, essential home tasks to prepare the home for your return, installation of key… Keywords: home, moving furniture, services install, home tasks, home return.",
+      "keywords": [
+        "home",
+        "moving furniture",
+        "services install",
+        "home tasks",
+        "home return",
+        "return",
+        "return installation",
+        "carers emergency",
+        "safe carers",
+        "installation key"
+      ],
+      "description": "Hot meals delivery, regular phone calls, moving furniture, essential home tasks to prepare the home for your return, installation of key safe for carers/emergency services, install personal alarms or assistive tech",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_097",
+      "category": "Loneliness & Community Connections",
+      "name": "Harlow Men’s Shed",
+      "cost": "Free",
+      "summary": "Situated in the Walled Garden of Harlow Town Park, this initiative addresses male isolation through shared practical tasks. Keywords: shoulder, men, face, 00, repair projects.",
+      "keywords": [
+        "shoulder",
+        "men",
+        "face",
+        "00",
+        "repair projects",
+        "practical tasks",
+        "shoulder dynamic",
+        "shoulder shoulder",
+        "pm concept",
+        "face therapy"
+      ],
+      "description": "Situated in the Walled Garden of Harlow Town Park, this initiative addresses male isolation through shared practical tasks.\n\nSchedule: Open every Tuesday (10:00 am – 4:00 pm).   \n\nConcept: Men work on woodwork and repair projects \"shoulder to shoulder,\" a dynamic proven to facilitate conversation and mental well-being more effectively than face-to-face therapy for many men.",
+      "websites": [],
+      "phones": [
+        "07762 752170"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_098",
+      "category": "Loneliness & Community Connections",
+      "name": "Harlow Rainbow Services",
+      "cost": "Free",
+      "summary": "Rainbow Services is a cornerstone of Harlow's voluntary sector. Keywords: community, project, residents, hub, social.",
+      "keywords": [
+        "community",
+        "project",
+        "residents",
+        "hub",
+        "social",
+        "matters project",
+        "matters",
+        "cornerstone",
+        "cornerstone harlow",
+        "project connecting"
+      ],
+      "description": "Rainbow Services is a cornerstone of Harlow's voluntary sector.\n\nCommunity Hub: Located in the Harvey Centre and Wych Elm, this hub acts as a physical \"front door\" for crisis support, volunteering information, and signposting.   \n\nCommunity Builder: This project actively supports residents in setting up their own social groups, shifting the dynamic from \"service delivery\" to \"community empowerment\".   \n\nSocial Prescribing: They manage the \"My Health Matters\" project, connecting residents with non-clinical support for issues like loneliness.",
+      "websites": [],
+      "phones": [
+        "01279 308150"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_099",
+      "category": "Loneliness & Community Connections",
+      "name": "Kinder Essex",
+      "cost": "Free",
+      "summary": "Collaborative project focusing on kindness and community connections to reduce isolation Keywords: kindness, focusing kindness, project focusing, collaborative, collaborative project.",
+      "keywords": [
+        "kindness",
+        "focusing kindness",
+        "project focusing",
+        "collaborative",
+        "collaborative project",
+        "reduce isolation",
+        "kindness community",
+        "connections",
+        "community connections",
+        "connections reduce"
+      ],
+      "description": "Collaborative project focusing on kindness and community connections to reduce isolation",
+      "websites": [],
+      "phones": [
+        "0300 303 9988"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_100",
+      "category": "Loneliness & Community Connections",
+      "name": "Harlow Hive",
+      "cost": "Free",
+      "summary": "Community networking group connecting local residents with local support and activities Keywords: local, connecting local, local residents, networking, networking group.",
+      "keywords": [
+        "local",
+        "connecting local",
+        "local residents",
+        "networking",
+        "networking group",
+        "group connecting",
+        "support activities",
+        "community networking",
+        "local support",
+        "residents local"
+      ],
+      "description": "Community networking group connecting local residents with local support and activities",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_101",
+      "category": "Loneliness & Community Connections",
+      "name": "Essex Pedal Power",
+      "cost": "Free",
+      "summary": "The \"Find Your Active\" campaign connects residents with local sports. Keywords: residents, distributes free, free bikes, bikes eligible, bikes.",
+      "keywords": [
+        "residents",
+        "distributes free",
+        "free bikes",
+        "bikes eligible",
+        "bikes",
+        "encourage physical",
+        "campaign connects",
+        "campaign",
+        "harlow combat",
+        "connects"
+      ],
+      "description": "The \"Find Your Active\" campaign connects residents with local sports. A flagship initiative, Essex Pedal Power, distributes free bikes to eligible residents in Harlow to combat transport poverty and encourage physical activity",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_102",
+      "category": "Loneliness & Community Connections",
+      "name": "Digital Share",
+      "cost": "Free",
+      "summary": "this project provides the hardware and skills necessary for modern life. Keywords: skills, library, green, email online, using.",
+      "keywords": [
+        "skills",
+        "library",
+        "green",
+        "email online",
+        "using",
+        "using nhs",
+        "email",
+        "available troubleshoot",
+        "safety support",
+        "nhs app"
+      ],
+      "description": "this project provides the hardware and skills necessary for modern life.\n\nProvision: They distribute donated devices and SIM cards with data to those in need.   \n\nEducation: \"Digital Skills Hubs\" at Harlow Town Library and Tye Green Library offer training on using the NHS app, setting up email, and online safety.   \n\nSupport: Volunteer \"Tech Advisors\" are available to troubleshoot specific issues.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_103",
+      "category": "Loneliness & Community Connections",
+      "name": "Nature's Choice",
+      "cost": "Charity Fee",
+      "summary": "in the Walled Garden, this therapeutic gardening group meets on Mondays (1:00 pm – 3:00 pm). Keywords: 00 pm, 00, pm, calm sensory, dementia mental.",
+      "keywords": [
+        "00 pm",
+        "00",
+        "pm",
+        "calm sensory",
+        "dementia mental",
+        "rich",
+        "rich environment",
+        "provides calm",
+        "therapeutic gardening",
+        "meets mondays"
+      ],
+      "description": " in the Walled Garden, this therapeutic gardening group meets on Mondays (1:00 pm – 3:00 pm). It provides a calm, sensory-rich environment suitable for those with dementia or mental health needs.",
+      "websites": [],
+      "phones": [
+        "07849 087787"
+      ],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_104",
+      "category": "Loneliness & Community Connections",
+      "name": "West Essex Night Owls",
+      "cost": "Free",
+      "summary": "Telephone emotional support during times of distress Keywords: times distress, support times, telephone emotional, times, emotional support.",
+      "keywords": [
+        "times distress",
+        "support times",
+        "telephone emotional",
+        "times",
+        "emotional support",
+        "distress",
+        "emotional",
+        "telephone",
+        "support"
+      ],
+      "description": "Telephone emotional support during times of distress",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    },
+    {
+      "id": "svc_105",
+      "category": "Loneliness & Community Connections",
+      "name": "Integration Support Services",
+      "cost": "Free",
+      "summary": "ital for Harlow’s migrant and refugee population. Keywords: social integration, creating safe, club tuesdays, applications social, creating.",
+      "keywords": [
+        "social integration",
+        "creating safe",
+        "club tuesdays",
+        "applications social",
+        "creating",
+        "population",
+        "population casework",
+        "esol english",
+        "esol",
+        "refugee"
+      ],
+      "description": "ital for Harlow’s migrant and refugee population.\n\nCasework: They provide one-to-one support for housing, benefits, and school applications.   \n\nSocial Integration: They run ESOL (English) classes and the \"Women's Health Club\" (Tuesdays 11am-1pm at Latton Bush), creating safe spaces for new arrivals to build networks.",
+      "websites": [],
+      "phones": [],
+      "emails": [],
+      "address": null
+    }
+  ]
+}
