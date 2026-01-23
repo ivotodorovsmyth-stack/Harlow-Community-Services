@@ -10,6 +10,7 @@
   <header class="topbar">
     <div class="brand">
       <h1>Harlow Community Services</h1>
+      <p class="subtitle">Search and share local support options (no installation required)</p>
     </div>
     <div class="top-actions">
       <button id="btnHelp" class="btn btn-ghost">Help</button>
@@ -22,10 +23,15 @@
       <div class="search-card">
         <label class="label" for="q">Patient presentation / what are they looking for?</label>
         <div class="search-row">
-          <input id="q" type="search" placeholder="Try: ‘I feel panicky and can't sleep’, ‘need help with alcohol’, ‘carer burnout’, ‘housing/benefits’…" autocomplete="off" />
+          <input id="q" type="search" placeholder="e.g., anxiety and panic attacks, struggling with alcohol, housing advice, carer support…" autocomplete="off" />
+          <button id="btnSearch" class="btn btn-primary">Search</button>
         </div>
         <div class="filters">
-          <div class="chip-group" id="quickChips" aria-label="Search suggestions"></div>
+          <div class="chip-group" id="quickChips" aria-label="Quick chips"></div>
+          <div class="filter-row">
+            <label class="label" for="categoryFilter">Category</label>
+            <select id="categoryFilter"></select>
+          </div>
           <div class="filter-row">
             <label class="label" for="costFilter">Cost</label>
             <select id="costFilter">
@@ -94,24 +100,24 @@
     </aside>
   </main>
 
+  <!-- Help modal -->
   <dialog id="helpDialog" class="modal">
     <h3>How to use</h3>
     <ul>
-      <li>Start typing a patient’s needs (plain language) in the search box — results update automatically.</li>
-      <li>Use the category tiles to browse visually if you’re not sure where to start.</li>
-      <li>Open <b>Full description</b> on any card to view the complete text from the source document.</li>
-      <li>Select services with <b>Add</b>, then edit wording/contact details in the right panel if needed.</li>
-      <li>Full service descriptions are always included in the patient output.</li>
-      <li>Use <b>Copy</b>, <b>Print</b>, or <b>Download PDF</b> to share. Printing will show full URLs.</li>
-      <li><b>Hyperlink / Plain text</b> controls whether links are copied as clickable links or as written-out URLs.</li>
+      <li>Type a patient’s needs in plain language and press <b>Search</b>.</li>
+      <li>Open a service card to view the full description (as written in the source document).</li>
+      <li>Use <b>Add</b> to include services in the patient output. You can edit text before sharing.</li>
+      <li>Use the <b>Hyperlink / Plain text</b> toggle to control how links appear in the final output.</li>
     </ul>
     <div class="modal-actions">
       <button class="btn btn-primary" id="btnCloseHelp">Close</button>
     </div>
   </dialog>
 
+  <!-- Libraries (client-side only) -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+
   <script src="app.js"></script>
 </body>
 </html>
