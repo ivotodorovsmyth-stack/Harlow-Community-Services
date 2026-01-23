@@ -2,49 +2,84 @@
 
 let SERVICES = [];
 let fuse = null;
-let selected = []; // [{id, editedText, editedTitle, includeFullDesc, websitesText, emailsText, phonesText, addressText}]
+let selected = []; // [{id, editedText, editedTitle, websitesText, emailsText, phonesText, addressText}]
 let linkMode = 'hyperlink'; // or 'plain'
+let searchTimer = null;
 
-// Query expansion for wide/natural language matching
+// Category icons + colours (no branding)
+const CATEGORY_META = {
+  'Addiction & Substance Misuse': { icon: '🧩', colorVar: '--cat-addiction' },
+  'Support for Carers': { icon: '🤝', colorVar: '--cat-carers' },
+  'Mental Health & Emotional Support': { icon: '🧠', colorVar: '--cat-mental' },
+  'Neurodiversity (ADHD, Autism, Learning Disability, etc)': { icon: '🌈', colorVar: '--cat-neuro' },
+  'Musculoskeletal Health': { icon: '🦴', colorVar: '--cat-msk' },
+  'Perinatal & Family Wellbeing': { icon: '👶', colorVar: '--cat-perinatal' },
+  'Work, Money & Housing and Food Banks': { icon: '🏠', colorVar: '--cat-work' },
+  'Safety & Abuse': { icon: '🛡️', colorVar: '--cat-safety' },
+  'Age Related Needs (Mobility, Lifestyle, Care, Community)': { icon: '🧓', colorVar: '--cat-age' },
+  'Physical Disability & Neurological Conditions': { icon: '♿', colorVar: '--cat-disability' },
+  'Loneliness & Community Connections': { icon: '🧑‍🤝‍🧑', colorVar: '--cat-lonely' },
+};
+
+function normCategory(cat){
+  return (cat||'').replace(/\s+/g,' ').trim();
+}
+
+function metaFor(cat){
+  const c = normCategory(cat);
+  if(CATEGORY_META[c]) return CATEGORY_META[c];
+  if(c.toLowerCase().includes('neurodivers')) return CATEGORY_META['Neurodiversity (ADHD, Autism, Learning Disability, etc)'];
+  if(c.toLowerCase().includes('mental')) return CATEGORY_META['Mental Health & Emotional Support'];
+  if(c.toLowerCase().includes('carer')) return CATEGORY_META['Support for Carers'];
+  if(c.toLowerCase().includes('addiction') || c.toLowerCase().includes('substance')) return CATEGORY_META['Addiction & Substance Misuse'];
+  if(c.toLowerCase().includes('perinatal') || c.toLowerCase().includes('family')) return CATEGORY_META['Perinatal & Family Wellbeing'];
+  if(c.toLowerCase().includes('work') || c.toLowerCase().includes('housing') || c.toLowerCase().includes('food')) return CATEGORY_META['Work, Money & Housing and Food Banks'];
+  if(c.toLowerCase().includes('safety') || c.toLowerCase().includes('abuse')) return CATEGORY_META['Safety & Abuse'];
+  if(c.toLowerCase().includes('lonely') || c.toLowerCase().includes('community')) return CATEGORY_META['Loneliness & Community Connections'];
+  if(c.toLowerCase().includes('age') || c.toLowerCase().includes('older') || c.toLowerCase().includes('mobility')) return CATEGORY_META['Age Related Needs (Mobility, Lifestyle, Care, Community)'];
+  if(c.toLowerCase().includes('musculoskeletal') || c.toLowerCase().includes('physio') || c.toLowerCase().includes('msk')) return CATEGORY_META['Musculoskeletal Health'];
+  if(c.toLowerCase().includes('disability') || c.toLowerCase().includes('neurological')) return CATEGORY_META['Physical Disability & Neurological Conditions'];
+  return { icon: 'ℹ️', colorVar: '--blue' };
+}
+
 const SYNONYMS = {
-  // mental health
   'suicidal': ['suicide', 'self harm', 'crisis', '999', '111', 'samaritans', 'shout'],
-  'panic': ['anxiety', 'panic attacks', 'breathless', 'talking therapies'],
+  'panic': ['anxiety', 'panic attacks', 'breathless', 'talking therapies', 'vita minds'],
+  'cant sleep': ['insomnia', 'anxiety', 'stress'],
   'low mood': ['depression', 'talking therapies', 'vita minds', 'counselling'],
   'bereavement': ['grief', 'support'],
-  // substance misuse
+  'lonely': ['loneliness', 'community', 'men’s shed', 'walking group', 'rainbow services'],
   'alcohol': ['addiction', 'substance misuse', 'open road', 'al-anon', 'smart recovery'],
   'drugs': ['substance misuse', 'open road', 'eypdas', 'phoenix futures'],
-  // carers
-  'carer': ['carers', 'respite', 'action for family carers', 'carers first'],
-  // housing / money
+  'gambling': ['addiction', 'support'],
+  'carer': ['carers', 'respite', 'action for family carers', 'carers first', 'mobilise'],
+  'burnout': ['stress', 'carer', 'respite', 'counselling'],
   'housing': ['homeless', 'tenancy', 'benefits', 'peabody', 'streets2homes', 'citizens advice'],
+  'eviction': ['housing', 'arrears', 'citizens advice', 'peabody'],
   'money': ['benefits', 'debt', 'citizens advice', 'jobcentre'],
   'food': ['foodbank', 'salvation army', 'the fridge'],
-  // safety
   'domestic abuse': ['abuse', 'compass', 'safer places', 'women’s aid', 'galop', 'respect'],
-  // neurodiversity
-  'autism': ['neurodiversity', 'adhd', 'pact', 'together for neurodiversity'],
+  'forced marriage': ['forced marriage unit', 'karma nirvana'],
+  'autism': ['neurodiversity', 'adhd', 'pact', 'together for neurodiversity', 'families in focus'],
   'adhd': ['neurodiversity', 'autism', 'support'],
-  // MSK
   'back pain': ['musculoskeletal', 'physio', 'msk', 'self-referral'],
   'joint pain': ['physio', 'msk'],
-  // older adults
   'falls': ['fall', 'strength and balance', 'falls car'],
-  'lonely': ['loneliness', 'community', 'men’s shed', 'rainbow services', 'walking groups'],
 };
 
 const QUICK_CHIPS = [
-  {label:'Crisis / suicidal thoughts', q:'urgent crisis suicidal thoughts'},
-  {label:'Anxiety / panic', q:'anxiety panic'},
-  {label:'Depression / low mood', q:'low mood depression'},
-  {label:'Alcohol / drugs', q:'alcohol drugs addiction'},
-  {label:'Domestic abuse', q:'domestic abuse'},
-  {label:'Carer support', q:'carer respite support'},
-  {label:'Housing / benefits', q:'housing benefits money'},
-  {label:'Neurodiversity (ADHD/autism)', q:'autism adhd neurodiversity'},
-  {label:'MSK pain / physio', q:'back pain physio self referral'},
-  {label:'Loneliness / social groups', q:'lonely social group'},
+  {label:'“I feel panicky and can’t sleep” → anxiety / talking therapies', q:'I feel panicky and cant sleep'},
+  {label:'“I’m having thoughts of ending my life” → crisis support', q:'I am suicidal and need urgent help'},
+  {label:'“I’m drinking more and want help to stop” → alcohol support', q:'drinking too much alcohol want help'},
+  {label:'“Cocaine / drugs are out of control” → substance misuse', q:'drug use cocaine support'},
+  {label:'“I’m a carer and I’m exhausted” → carer breaks/respite', q:'carer burnout need a break'},
+  {label:'“Money problems / benefits / debt” → advice services', q:'benefits debt money advice'},
+  {label:'“I’m at risk of homelessness” → housing support', q:'eviction homeless housing help'},
+  {label:'“Foodbank / emergency food” → food support', q:'foodbank emergency food'},
+  {label:'“Domestic abuse / controlling partner” → safety support', q:'domestic abuse controlling partner'},
+  {label:'“Autism/ADHD support for my child” → neurodiversity services', q:'autism adhd support for my child'},
+  {label:'“Back pain, need physio” → MSK self-referral', q:'back pain need physio self referral'},
+  {label:'“Lonely and isolated” → community connections', q:'lonely isolated need social group'},
 ];
 
 function $(id){ return document.getElementById(id); }
@@ -59,7 +94,6 @@ function escapeHtml(s){
 }
 
 function renderMarkdownLinksPreserveText(text){
-  // Render [label](href) as <a href="href">label</a> while keeping visible text identical.
   if(!text) return '';
   const re = /\[([^\]]+)\]\(([^\)]+)\)/g;
   let out = '';
@@ -69,15 +103,11 @@ function renderMarkdownLinksPreserveText(text){
     out += escapeHtml(text.slice(last, m.index));
     const label = escapeHtml(m[1]);
     const href = escapeHtml(m[2]);
-    if(href.startsWith('mailto:')){
-      out += `<a href="${href}">${label}</a>`;
-    } else {
-      out += `<a href="${href}" target="_blank" rel="noopener">${label}</a>`;
-    }
+    if(href.startsWith('mailto:')) out += `<a href="${href}">${label}</a>`;
+    else out += `<a href="${href}" target="_blank" rel="noopener">${label}</a>`;
     last = re.lastIndex;
   }
   out += escapeHtml(text.slice(last));
-  // Also auto-link bare URLs while keeping them visible
   out = out.replace(/(https?:\/\/[^\s<]+)/g, (u)=>`<a href="${u}" target="_blank" rel="noopener">${u}</a>`);
   return out;
 }
@@ -107,14 +137,7 @@ function expandQuery(q){
   return (q + ' ' + extra.join(' ')).trim();
 }
 
-function applyFilters(items){
-  const cat = $('categoryFilter').value;
-  const cost = $('costFilter').value;
-  return items.filter(s => (!cat || s.category === cat) && (!cost || (s.cost||'').toLowerCase().includes(cost.toLowerCase())));
-}
-
 function scoreBoost(service, q){
-  // Rule-based boosts for safety/crisis etc.
   const t = (q||'').toLowerCase();
   let boost = 0;
   if(/suicid|self harm|kill myself|end my life|overdose/.test(t)){
@@ -127,10 +150,10 @@ function scoreBoost(service, q){
     if(['Open Road','AL-Anon','Phoenix Futures','Essex Young People’s Drug and Alcohol Service (EYPDAS)','Smart Recovery'].includes(service.name)) boost += 0.15;
   }
   if(/carer|caring|respite/.test(t)){
-    if(service.category.includes('Carers')) boost += 0.12;
+    if(normCategory(service.category).toLowerCase().includes('carer')) boost += 0.12;
   }
   if(/housing|homeless|evict|rent|arrears|benefit|universal credit|foodbank/.test(t)){
-    if(service.category.includes('Work, Money') || service.name.toLowerCase().includes('food')) boost += 0.10;
+    if(normCategory(service.category).toLowerCase().includes('work') || service.name.toLowerCase().includes('food')) boost += 0.10;
   }
   return boost;
 }
@@ -146,14 +169,17 @@ function search(){
     results = fuse.search(q);
   }
 
-  // Convert to list and apply rule boosts
   let items = results.map(r => ({...r.item, _score: r.score}));
-  items = applyFilters(items);
+
+  const cost = $('costFilter')?.value || '';
+  if(cost){
+    items = items.filter(s => (s.cost||'').toLowerCase().includes(cost.toLowerCase()));
+  }
 
   if(q){
     items.forEach(s => {
       const b = scoreBoost(s, q0);
-      s._score = Math.max(0, (s._score ?? 0.6) - b); // lower Fuse score = better
+      s._score = Math.max(0, (s._score ?? 0.6) - b);
     });
     items.sort((a,b)=> (a._score??1)-(b._score??1));
   }
@@ -162,11 +188,16 @@ function search(){
   $('resultsMeta').textContent = q0 ? `Showing top ${Math.min(40, items.length)} of ${items.length} matches` : `Showing all ${items.length} services`;
 }
 
+function scheduleSearch(){
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(search, 180);
+}
+
 function renderResults(list){
   const container = $('results');
   container.innerHTML = '';
   if(!list.length){
-    container.innerHTML = `<div class="small">No matches found. Try different words or browse categories.</div>`;
+    container.innerHTML = `<div class="small">No matches found. Try different words or use the category tiles below.</div>`;
     return;
   }
   for(const s of list){
@@ -177,6 +208,10 @@ function renderResults(list){
 function serviceCard(service){
   const el = document.createElement('div');
   el.className = 'card';
+
+  const meta = metaFor(service.category);
+  el.dataset.cat = normCategory(service.category);
+  el.style.setProperty('--cat-color', `var(${meta.colorVar})`);
 
   const websites = (service.websites||[]).slice(0,3)
     .map(u => `<div><span class="small">Website:</span> <a href="${escapeHtml(u)}" target="_blank" rel="noopener">${escapeHtml(u)}</a></div>`)
@@ -192,11 +227,14 @@ function serviceCard(service){
 
   el.innerHTML = `
     <div class="card-head">
-      <div>
-        <h3>${escapeHtml(service.name)}</h3>
-        <div class="pills">
-          <span class="pill">${escapeHtml(service.category)}</span>
-          ${service.cost ? `<span class="pill pill-cost">${escapeHtml(service.cost)}</span>`:''}
+      <div class="title-row">
+        <span class="cat-accent" title="${escapeHtml(normCategory(service.category))}">${escapeHtml(meta.icon)}</span>
+        <div>
+          <h3>${escapeHtml(service.name)}</h3>
+          <div class="pills">
+            <span class="pill">${escapeHtml(normCategory(service.category))}</span>
+            ${service.cost ? `<span class="pill pill-cost">${escapeHtml(service.cost)}</span>`:''}
+          </div>
         </div>
       </div>
       <div class="actions">
@@ -233,10 +271,12 @@ function addSelected(id){
     id,
     editedTitle: svc.name,
     editedText: '',
-    includeFullDesc: false,
-    websitesText: (svc.websites||[]).join('\n'),
-    emailsText: (svc.emails||[]).join('\n'),
-    phonesText: (svc.phones||[]).join('\n'),
+    websitesText: (svc.websites||[]).join('
+'),
+    emailsText: (svc.emails||[]).join('
+'),
+    phonesText: (svc.phones||[]).join('
+'),
     addressText: svc.address || ''
   });
   renderSelected();
@@ -253,7 +293,9 @@ function removeSelected(id){
 
 function parseLines(text){
   return (text||'')
-    .split(/\r?\n/)
+    .split(/
+?
+/)
     .map(s=>s.trim())
     .filter(Boolean);
 }
@@ -278,18 +320,23 @@ function renderSelected(){
     const svc = SERVICES.find(s=>s.id===item.id);
     if(!svc) continue;
 
+    const meta = metaFor(svc.category);
+
     const wrap = document.createElement('div');
     wrap.className = 'selected-item';
+    wrap.style.setProperty('--cat-color', `var(${meta.colorVar})`);
+    wrap.style.borderLeft = '6px solid var(--cat-color)';
+
     wrap.innerHTML = `
       <div class="row">
-        <div>
-          <div style="font-weight:800;color:var(--dark)">${escapeHtml(item.editedTitle || svc.name)}</div>
-          <div class="small">${escapeHtml(svc.category)}${svc.cost ? ' • ' + escapeHtml(svc.cost):''}</div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <span class="cat-accent" title="${escapeHtml(normCategory(svc.category))}">${escapeHtml(meta.icon)}</span>
+          <div>
+            <div style="font-weight:800;color:var(--dark)">${escapeHtml(item.editedTitle || svc.name)}</div>
+            <div class="small">${escapeHtml(normCategory(svc.category))}${svc.cost ? ' • ' + escapeHtml(svc.cost):''}</div>
+          </div>
         </div>
-        <div style="display:flex;gap:8px;align-items:center">
-          <label class="small"><input type="checkbox" data-id="${svc.id}" data-field="includeFullDesc" ${item.includeFullDesc?'checked':''}/> include full description</label>
-          <button class="btn btn-ghost" data-action="remove" data-id="${svc.id}">Remove</button>
-        </div>
+        <button class="btn btn-ghost" data-action="remove" data-id="${svc.id}">Remove</button>
       </div>
 
       <label class="label" style="margin-top:8px">Edit title (optional)</label>
@@ -316,9 +363,9 @@ function renderSelected(){
       </div>
 
       <label class="label" style="margin-top:8px">Add / edit text for this service (optional)</label>
-      <textarea rows="3" data-id="${svc.id}" data-field="editedText" placeholder="Add any details, appointment instructions, or personalised notes…">${escapeHtml(item.editedText || '')}</textarea>
+      <textarea rows="3" data-id="${svc.id}" data-field="editedText" placeholder="Add any appointment instructions or personalised notes…">${escapeHtml(item.editedText || '')}</textarea>
 
-      <div class="small" style="margin-top:6px">Tip: Use the toggle above to control whether links are copied as clickable hyperlinks or as plain URLs.</div>
+      <div class="small" style="margin-top:6px">Full service descriptions are always included in the patient output.</div>
     `;
 
     wrap.querySelector('[data-action=remove]').addEventListener('click', ()=>removeSelected(svc.id));
@@ -329,8 +376,7 @@ function renderSelected(){
       inp.addEventListener('input', (e)=>{
         const it = selected.find(x=>x.id===id);
         if(!it) return;
-        if(field === 'includeFullDesc') it.includeFullDesc = e.target.checked;
-        else it[field] = e.target.value;
+        it[field] = e.target.value;
         updatePreview();
       });
       inp.addEventListener('change', ()=> updatePreview());
@@ -355,8 +401,7 @@ function buildFinalHtml(){
     const c = effectiveContacts(item, svc);
 
     const title = escapeHtml(item.editedTitle || svc.name);
-    const category = escapeHtml(svc.category || '');
-    const cost = svc.cost ? ` • ${escapeHtml(svc.cost)}` : '';
+    const costLine = svc.cost ? `<div style="color:#4C6272;font-size:12px"><b>Cost:</b> ${escapeHtml(svc.cost)}</div>` : ``;
 
     const websites = (c.websites||[]).map(u => {
       if(linkMode === 'hyperlink') return `<div><b>Website:</b> <a href="${escapeHtml(u)}">${escapeHtml(u)}</a></div>`;
@@ -373,14 +418,15 @@ function buildFinalHtml(){
     const addr = c.address ? `<div><b>Address:</b> ${escapeHtml(c.address)}</div>` : '';
 
     const userText = (item.editedText||'').trim();
-    const userBlock = userText ? `<div style="margin-top:6px">${escapeHtml(userText).replace(/\n/g,'<br/>')}</div>` : '';
+    const userBlock = userText ? `<div style="margin-top:6px">${escapeHtml(userText).replace(/
+/g,'<br/>')}</div>` : '';
 
-    const descBlock = item.includeFullDesc ? `<div style="margin-top:6px"><b>Description:</b><br/>${renderMarkdownLinksPreserveText(svc.description)}</div>` : '';
+    const descBlock = `<div style="margin-top:8px"><b>Description:</b><br/>${renderMarkdownLinksPreserveText(svc.description)}</div>`;
 
     blocks.push(`
       <div class="final-block" style="border:1px solid #D8DDE6;border-radius:12px;padding:10px;margin:10px 0">
         <div style="font-weight:800">${title}</div>
-        <div style="color:#4C6272;font-size:12px">${category}${cost}</div>
+        ${costLine}
         <div style="margin-top:6px">${escapeHtml(svc.summary||'')}</div>
         ${websites}${emails}${phones}${addr}
         ${userBlock}
@@ -389,7 +435,8 @@ function buildFinalHtml(){
     `);
   }
 
-  return blocks.join('\n');
+  return blocks.join('
+');
 }
 
 function buildFinalText(){
@@ -409,7 +456,7 @@ function buildFinalText(){
     const c = effectiveContacts(item, svc);
 
     lines.push(item.editedTitle || svc.name);
-    lines.push(`${svc.category}${svc.cost ? ' • ' + svc.cost : ''}`);
+    if(svc.cost) lines.push('Cost: ' + svc.cost);
     lines.push(svc.summary || '');
 
     for(const u of (c.websites||[])) lines.push('Website: ' + u);
@@ -422,18 +469,16 @@ function buildFinalText(){
       lines.push(item.editedText.trim());
     }
 
-    if(item.includeFullDesc){
-      lines.push('');
-      lines.push('Description:');
-      // Preserve exactly as source (including [label](url))
-      lines.push((svc.description||'').trim());
-    }
+    lines.push('');
+    lines.push('Description:');
+    lines.push((svc.description||'').trim());
 
     lines.push('');
     lines.push('---');
     lines.push('');
   }
-  return lines.join('\n');
+  return lines.join('
+');
 }
 
 async function copyToClipboard(){
@@ -455,7 +500,6 @@ async function copyToClipboard(){
     }
     alert('Copied to clipboard.');
   } catch(err){
-    // Fallback
     const ta = document.createElement('textarea');
     ta.value = text;
     document.body.appendChild(ta);
@@ -507,21 +551,19 @@ function updatePreview(){
 }
 
 function setupCategoryBrowse(){
-  const cats = Array.from(new Set(SERVICES.map(s=>s.category))).sort();
-  const sel = $('categoryFilter');
-  sel.innerHTML = `<option value="">All categories</option>` + cats.map(c=>`<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join('');
-
+  const cats = Array.from(new Set(SERVICES.map(s=>normCategory(s.category)))).sort();
   const grid = $('categoryGrid');
   grid.innerHTML = '';
   for(const c of cats){
-    const count = SERVICES.filter(s=>s.category===c).length;
+    const count = SERVICES.filter(s=>normCategory(s.category)===c).length;
+    const meta = metaFor(c);
     const tile = document.createElement('div');
     tile.className='category-tile';
-    tile.innerHTML = `<div class="category-title">${escapeHtml(c)}</div><div class="category-count">${count} services</div>`;
+    tile.style.borderLeft = `6px solid var(${meta.colorVar})`;
+    tile.innerHTML = `<div class="category-title"><span class="cat-accent" style="margin-right:8px">${escapeHtml(meta.icon)}</span>${escapeHtml(c)}</div><div class="category-count">${count} services</div>`;
     tile.addEventListener('click', ()=>{
-      $('categoryFilter').value = c;
-      $('q').value = '';
-      search();
+      $('q').value = c;
+      scheduleSearch();
       window.scrollTo({top:0, behavior:'smooth'});
     });
     grid.appendChild(tile);
@@ -563,7 +605,6 @@ function setupHelp(){
 
 function resetAll(){
   $('q').value='';
-  $('categoryFilter').value='';
   $('costFilter').value='';
   $('patientNote').value='';
   selected=[];
@@ -575,7 +616,7 @@ function resetAll(){
 async function init(){
   const res = await fetch('./data/services.json');
   const data = await res.json();
-  SERVICES = data.services || [];
+  SERVICES = (data.services || []).map(s=>({ ...s, category: normCategory(s.category) }));
 
   buildFuse();
   setupQuickChips();
@@ -583,11 +624,9 @@ async function init(){
   setupToggles();
   setupHelp();
 
-  $('btnSearch').addEventListener('click', search);
-  $('q').addEventListener('keydown', (e)=>{ if(e.key==='Enter') search(); });
-  $('categoryFilter').addEventListener('change', search);
+  $('q').addEventListener('input', scheduleSearch);
   $('costFilter').addEventListener('change', search);
-  $('btnBrowseAll').addEventListener('click', ()=>{ $('q').value=''; $('categoryFilter').value=''; $('costFilter').value=''; search(); });
+  $('btnBrowseAll').addEventListener('click', ()=>{ $('q').value=''; $('costFilter').value=''; search(); });
 
   $('btnCopy').addEventListener('click', copyToClipboard);
   $('btnPrint').addEventListener('click', printSelected);
