@@ -203,7 +203,7 @@ function serviceCard(service){
         <button class="btn ${already ? 'btn-ghost':''}" data-id="${service.id}">${already ? 'Remove':'Add'}</button>
       </div>
     </div>
-escapeHtml(service.summary || '')
+<p class="summary">${escapeHtml(service.summary || '')}</p>
     <div class="contacts">
       ${websites}
       ${emails}
