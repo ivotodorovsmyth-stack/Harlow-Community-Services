@@ -410,7 +410,7 @@ function buildFinalText(){
 
     lines.push(item.editedTitle || svc.name);
     lines.push(`${svc.category}${svc.cost ? ' • ' + svc.cost : ''}`);
-    lines.push(svc.summary || '');
+
 
     for(const u of (c.websites||[])) lines.push('Website: ' + u);
     for(const e of (c.emails||[])) lines.push('Email: ' + e);
