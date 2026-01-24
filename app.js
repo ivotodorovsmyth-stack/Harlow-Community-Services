@@ -112,12 +112,20 @@ function catTheme(category){
   return map[c] || { accent: 'var(--cat-default-accent)', bg: 'var(--cat-default-bg)' };
 }
 
+
 function applyCatTheme(el, category){
-  
+  const theme = catTheme(category);
+  el.dataset.cat = (category || '').trim();
+  el.style.setProperty('--cat-accent', theme.accent);
+  el.style.setProperty('--cat-bg', theme.bg);
+}
+
 // --- Category icons (Set A) ------------------------------------
 // Uses "contains" matching so small wording differences still get the right icon.
 function catIcon(category){
-  const c = (category || '').toLowerCase();
+  const c = (category || '')
+    .toLowerCase()
+    .replaceAll('&amp;', '&');
 
   if(c.includes('addiction') || c.includes('substance')) return '🧩';
   if(c.includes('carer')) return '🤝';
@@ -127,9 +135,9 @@ function catIcon(category){
   if(c.includes('perinatal') || c.includes('family')) return '👶';
   if(c.includes('work') || c.includes('money') || c.includes('housing') || c.includes('food bank') || c.includes('foodbank')) return '🏠';
   if(c.includes('safety') || c.includes('abuse') || c.includes('domestic')) return '🛡️';
-  if(c.includes('age related') || c.includes('older') || c.includes('mobility') || c.includes('care, community')) return '🧓';
+  if(c.includes('age related') || c.includes('older') || c.includes('mobility')) return '🧓';
   if(c.includes('disability') || c.includes('neurological')) return '♿';
-  if(c.includes('loneliness') || c.includes('community connections') || c.includes('community')) return '🧑‍🤝‍🧑';
+  if(c.includes('loneliness') || c.includes('community')) return '🧑‍🤝‍🧑';
 
   return '';
 }
@@ -138,6 +146,7 @@ function displayCategory(category){
   const icon = catIcon(category);
   return icon ? `${icon} ${category}` : category;
 }
+
 
   const theme = catTheme(category);
   el.dataset.cat = (category || '').trim();
