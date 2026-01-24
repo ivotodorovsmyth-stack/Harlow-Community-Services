@@ -112,11 +112,49 @@ function catTheme(category){
   return map[c] || { accent: 'var(--cat-default-accent)', bg: 'var(--cat-default-bg)' };
 }
 
+
 function applyCatTheme(el, category){
   const theme = catTheme(category);
   el.dataset.cat = (category || '').trim();
   el.style.setProperty('--cat-accent', theme.accent);
   el.style.setProperty('--cat-bg', theme.bg);
+}
+
+// --- Category icons (Set A) ------------------------------------
+// Uses "contains" matching so small wording differences still get the right icon.
+
+function applyCatTheme(el, category){
+  const theme = catTheme(category);
+  el.dataset.cat = (category || '').trim();
+  el.style.setProperty('--cat-accent', theme.accent);
+  el.style.setProperty('--cat-bg', theme.bg);
+}
+
+// --- Category icons (Set A) ------------------------------------
+// Uses "contains" matching so small wording differences still get the right icon.
+function catIcon(category){
+  const c = (category || '')
+    .toLowerCase()
+    .replaceAll('&amp;', '&');   // helps if any category text contains HTML entities
+
+  if(c.includes('addiction') || c.includes('substance')) return '🧩';
+  if(c.includes('carer')) return '🤝';
+  if(c.includes('mental') || c.includes('emotional')) return '🧠';
+  if(c.includes('neurodivers')) return '🌈';
+  if(c.includes('musculoskeletal') || c.includes('msk')) return '🦴';
+  if(c.includes('perinatal') || c.includes('family')) return '👶';
+  if(c.includes('work') || c.includes('money') || c.includes('housing') || c.includes('food bank') || c.includes('foodbank')) return '🏠';
+  if(c.includes('safety') || c.includes('abuse') || c.includes('domestic')) return '🛡️';
+  if(c.includes('age related') || c.includes('older') || c.includes('mobility')) return '🧓';
+  if(c.includes('disability') || c.includes('neurological')) return '♿';
+  if(c.includes('loneliness') || c.includes('community')) return '🧑‍🤝‍🧑';
+
+  return '';
+}
+
+function displayCategory(category){
+  const icon = catIcon(category);
+  return icon ? `${icon} ${category}` : category;
 }
 
 function renderMarkdownLinksPreserveText(text){
@@ -256,7 +294,7 @@ applyCatTheme(el, service.category);
       <div>
         <h3>${escapeHtml(service.name)}</h3>
         <div class="pills">
-          <span class="pill">${escapeHtml(service.category)}</span>
+       <span class="pill">${escapeHtml(displayCategory(service.category))}</span>
           ${service.cost ? `<span class="pill pill-cost">${escapeHtml(service.cost)}</span>`:''}
         </div>
       </div>
@@ -346,7 +384,7 @@ function renderSelected(){
       <div class="row">
         <div>
           <div style="font-weight:800;color:var(--dark)">${escapeHtml(item.editedTitle || svc.name)}</div>
-          <div class="small">${escapeHtml(svc.category)}${svc.cost ? ' • ' + escapeHtml(svc.cost):''}</div>
+        <div class="small">${escapeHtml(displayCategory(svc.category))}${svc.cost ? ' • ' + escapeHtml(svc.cost):''}</div>
         </div>
         <div style="display:flex;gap:8px;align-items:center">
           <label class="small"><input type="checkbox" data-id="${svc.id}" data-field="includeFullDesc" ${item.includeFullDesc?'checked':''}/> include full description</label>
@@ -580,7 +618,7 @@ function setupCategoryBrowse(){
     const tile = document.createElement('div');
     tile.className='category-tile';
     applyCatTheme(tile, c);
-    tile.innerHTML = `<div class="category-title">${escapeHtml(c)}</div><div class="category-count">${count} services</div>`;
+    tile.innerHTML = `<div class="category-title">${escapeHtml(displayCategory(c))}</div><div class="category-count">${count} services</div>`;
     tile.addEventListener('click', ()=>{
       $('categoryFilter').value = c;
       $('q').value = '';
