@@ -145,8 +145,6 @@ function catIcon(category){
 function displayCategory(category){
   const icon = catIcon(category);
   return icon ? `${icon} ${category}` : category;
-}
-
 
   const theme = catTheme(category);
   el.dataset.cat = (category || '').trim();
