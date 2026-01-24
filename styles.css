@@ -13,6 +13,60 @@
   --shadow: 0 6px 20px rgba(0,0,0,.08);
   --radius:14px;
 }
+
+/* ===== Category palette (pale/natural tones) ===== */
+:root{
+  --cat-default-accent: #5B84C4;
+  --cat-default-bg:     #F2F6FD;
+
+  --cat-addiction-accent: #8C5A6A;  /* muted berry */
+  --cat-addiction-bg:     #F6EEF1;
+
+  --cat-carers-accent:    #4E8D7C;  /* sage/teal */
+  --cat-carers-bg:        #ECF6F2;
+
+  --cat-mental-accent:    #5F77A6;  /* soft indigo */
+  --cat-mental-bg:        #EEF2FA;
+
+  --cat-neuro-accent:     #7A6AA8;  /* lavender */
+  --cat-neuro-bg:         #F1EEFA;
+
+  --cat-msk-accent:       #5C8B6E;  /* green */
+  --cat-msk-bg:           #EDF6F0;
+
+  --cat-perinatal-accent: #B8894A;  /* warm sand */
+  --cat-perinatal-bg:     #FBF3E6;
+
+  --cat-work-accent:      #6E5B8F;  /* muted purple */
+  --cat-work-bg:          #F2EFF7;
+
+  --cat-safety-accent:    #B35A5A;  /* muted red */
+  --cat-safety-bg:        #FAEDED;
+
+  --cat-age-accent:       #4F7D99;  /* soft blue-teal */
+  --cat-age-bg:           #EAF4F8;
+
+  --cat-disability-accent:#5A6B78;  /* slate */
+  --cat-disability-bg:    #EEF2F4;
+
+  --cat-lonely-accent:    #4B8A9B;  /* calm teal */
+  --cat-lonely-bg:        #EAF7F8;
+}
+
+/* Generic category styling hooks */
+[data-cat]{
+  --cat-accent: var(--cat-default-accent);
+  --cat-bg:     var(--cat-default-bg);
+}
+
+/* Apply across the 3 areas */
+.category-tile[data-cat],
+.card[data-cat],
+.selected-item[data-cat]{
+  border-left: 6px solid var(--cat-accent);
+  background: var(--cat-bg);
+}
+
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
 a{color:var(--blue)}

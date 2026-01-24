@@ -58,6 +58,67 @@ function escapeHtml(s){
     .replaceAll("'",'&#039;');
 }
 
+function catTheme(category){
+  const c = (category || '').trim();
+
+  // Map your category names to CSS variables
+  const map = {
+    'Addiction & Substance Misuse': {
+      accent: 'var(--cat-addiction-accent)',
+      bg:     'var(--cat-addiction-bg)'
+    },
+    'Support for Carers': {
+      accent: 'var(--cat-carers-accent)',
+      bg:     'var(--cat-carers-bg)'
+    },
+    'Mental Health & Emotional Support': {
+      accent: 'var(--cat-mental-accent)',
+      bg:     'var(--cat-mental-bg)'
+    },
+    'Neurodiversity (ADHD, Autism, Learning Disability, etc)': {
+      accent: 'var(--cat-neuro-accent)',
+      bg:     'var(--cat-neuro-bg)'
+    },
+    'Musculoskeletal Health': {
+      accent: 'var(--cat-msk-accent)',
+      bg:     'var(--cat-msk-bg)'
+    },
+    'Perinatal & Family Wellbeing': {
+      accent: 'var(--cat-perinatal-accent)',
+      bg:     'var(--cat-perinatal-bg)'
+    },
+    'Work, Money & Housing and Food Banks': {
+      accent: 'var(--cat-work-accent)',
+      bg:     'var(--cat-work-bg)'
+    },
+    'Safety & Abuse': {
+      accent: 'var(--cat-safety-accent)',
+      bg:     'var(--cat-safety-bg)'
+    },
+    'Age Related Needs (Mobility, Lifestyle, Care, Community)': {
+      accent: 'var(--cat-age-accent)',
+      bg:     'var(--cat-age-bg)'
+    },
+    'Physical Disability & Neurological Conditions': {
+      accent: 'var(--cat-disability-accent)',
+      bg:     'var(--cat-disability-bg)'
+    },
+    'Loneliness & Community Connections': {
+      accent: 'var(--cat-lonely-accent)',
+      bg:     'var(--cat-lonely-bg)'
+    },
+  };
+
+  return map[c] || { accent: 'var(--cat-default-accent)', bg: 'var(--cat-default-bg)' };
+}
+
+function applyCatTheme(el, category){
+  const theme = catTheme(category);
+  el.dataset.cat = (category || '').trim();
+  el.style.setProperty('--cat-accent', theme.accent);
+  el.style.setProperty('--cat-bg', theme.bg);
+}
+
 function renderMarkdownLinksPreserveText(text){
   // Render [label](href) as <a href="href">label</a> while keeping visible text identical.
   if(!text) return '';
@@ -177,7 +238,7 @@ function renderResults(list){
 function serviceCard(service){
   const el = document.createElement('div');
   el.className = 'card';
-
+applyCatTheme(el, service.category);
   const websites = (service.websites||[]).slice(0,3)
     .map(u => `<div><span class="small">Website:</span> <a href="${escapeHtml(u)}" target="_blank" rel="noopener">${escapeHtml(u)}</a></div>`)
     .join('');
@@ -280,6 +341,7 @@ function renderSelected(){
 
     const wrap = document.createElement('div');
     wrap.className = 'selected-item';
+    applyCatTheme(wrap, svc.category);
     wrap.innerHTML = `
       <div class="row">
         <div>
@@ -517,6 +579,7 @@ function setupCategoryBrowse(){
     const count = SERVICES.filter(s=>s.category===c).length;
     const tile = document.createElement('div');
     tile.className='category-tile';
+    applyCatTheme(tile, c);
     tile.innerHTML = `<div class="category-title">${escapeHtml(c)}</div><div class="category-count">${count} services</div>`;
     tile.addEventListener('click', ()=>{
       $('categoryFilter').value = c;
