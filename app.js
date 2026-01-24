@@ -122,10 +122,20 @@ function applyCatTheme(el, category){
 
 // --- Category icons (Set A) ------------------------------------
 // Uses "contains" matching so small wording differences still get the right icon.
+
+function applyCatTheme(el, category){
+  const theme = catTheme(category);
+  el.dataset.cat = (category || '').trim();
+  el.style.setProperty('--cat-accent', theme.accent);
+  el.style.setProperty('--cat-bg', theme.bg);
+}
+
+// --- Category icons (Set A) ------------------------------------
+// Uses "contains" matching so small wording differences still get the right icon.
 function catIcon(category){
   const c = (category || '')
     .toLowerCase()
-    .replaceAll('&amp;', '&');
+    .replaceAll('&amp;', '&');   // helps if any category text contains HTML entities
 
   if(c.includes('addiction') || c.includes('substance')) return '🧩';
   if(c.includes('carer')) return '🤝';
@@ -145,11 +155,6 @@ function catIcon(category){
 function displayCategory(category){
   const icon = catIcon(category);
   return icon ? `${icon} ${category}` : category;
-
-  const theme = catTheme(category);
-  el.dataset.cat = (category || '').trim();
-  el.style.setProperty('--cat-accent', theme.accent);
-  el.style.setProperty('--cat-bg', theme.bg);
 }
 
 function renderMarkdownLinksPreserveText(text){
