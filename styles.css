@@ -107,8 +107,15 @@ textarea{width:100%;padding:10px;border:1px solid var(--border);border-radius:12
 .filter-row select{width:100%;padding:10px;border:1px solid var(--border);border-radius:12px}
 
 .chip-group{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px}
-.chip{background:rgba(65,182,230,.18);border:1px solid rgba(65,182,230,.4);color:var(--dark);padding:6px 10px;border-radius:999px;font-size:12px;cursor:pointer}
+.chip{background:rgba(65,182,230,.18);border:1px solid rgba(65,182,230,.4);color:var(--dark);padding:6px 10px;border-radius:999px;font-size:12px;cursor:pointer;transition:all 0.2s ease}
 .chip:hover{background:rgba(65,182,230,.28)}
+
+/* Active state for stackable keywords */
+.chip.active {
+  background: var(--dark);
+  color: #fff;
+  border-color: var(--dark);
+}
 
 .browse-header{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
 .category-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
