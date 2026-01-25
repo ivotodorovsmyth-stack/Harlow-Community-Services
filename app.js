@@ -34,28 +34,15 @@ const SYNONYMS = {
   'lonely': ['loneliness', 'community', 'men’s shed', 'rainbow services', 'walking groups'],
 };
 
-const QUICK_CHIPS = [
-  {label:'Crisis / suicidal thoughts', q:'urgent crisis suicidal thoughts'},
-  {label:'Anxiety / panic', q:'anxiety panic'},
-  {label:'Depression / low mood', q:'low mood depression'},
-  {label:'Alcohol / drugs', q:'alcohol drugs addiction'},
-  {label:'Domestic abuse', q:'domestic abuse'},
-  {label:'Carer support', q:'carer respite support'},
-  {label:'Housing / benefits', q:'housing benefits money'},
-  {label:'Neurodiversity (ADHD/autism)', q:'autism adhd neurodiversity'},
-  {label:'MSK pain / physio', q:'back pain physio self referral'},
-  {label:'Loneliness / social groups', q:'lonely social group'},
+// 20 Keywords covering most services offered
+const KEYWORDS = [
+  "Anxiety", "Depression", "Crisis", "Alcohol", "Drugs",
+  "Housing", "Benefits", "Food Bank", "Domestic Abuse", "Carers",
+  "Autism", "ADHD", "Physiotherapy", "Mobility", "Dementia",
+  "Loneliness", "Employment", "Bereavement", "Youth", "Learning Disability"
 ];
 
 function $(id){ return document.getElementById(id); }
-
-function debounce(func, timeout = 300) {
-  let timer;
-  return (...args) => {
-    clearTimeout(timer);
-    timer = setTimeout(() => { func.apply(this, args); }, timeout);
-  };
-}
 
 function escapeHtml(s){
   return (s ?? '').toString()
@@ -120,16 +107,6 @@ function catTheme(category){
   return map[c] || { accent: 'var(--cat-default-accent)', bg: 'var(--cat-default-bg)' };
 }
 
-
-function applyCatTheme(el, category){
-  const theme = catTheme(category);
-  el.dataset.cat = (category || '').trim();
-  el.style.setProperty('--cat-accent', theme.accent);
-  el.style.setProperty('--cat-bg', theme.bg);
-}
-
-// --- Category icons (Set A) ------------------------------------
-// Uses "contains" matching so small wording differences still get the right icon.
 
 function applyCatTheme(el, category){
   const theme = catTheme(category);
@@ -215,7 +192,11 @@ function expandQuery(q){
 }
 
 function applyFilters(items){
-  const cat = $('categoryFilter').value;
+  // Note: categoryFilter select was removed from HTML, so we rely on current state if any
+  // or simply ignore it if the element is gone. 
+  const catEl = $('categoryFilter');
+  const cat = catEl ? catEl.value : ''; // If element is gone, no category filter
+  
   const cost = $('costFilter').value;
   return items.filter(s => (!cat || s.category === cat) && (!cost || (s.cost||'').toLowerCase().includes(cost.toLowerCase())));
 }
@@ -248,6 +229,8 @@ function search(){
 
   let results;
   if(!q){
+    // If no query, and no category filter (since dropdown is gone), show all
+    // Or filter by cost if that is still there.
     results = SERVICES.map(s => ({item:s, score:0.5}));
   } else {
     results = fuse.search(q);
@@ -616,8 +599,9 @@ function updatePreview(){
 
 function setupCategoryBrowse(){
   const cats = Array.from(new Set(SERVICES.map(s=>s.category))).sort();
-  const sel = $('categoryFilter');
-  sel.innerHTML = `<option value="">All categories</option>` + cats.map(c=>`<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join('');
+  
+  // NOTE: Category Dropdown removed as requested.
+  // We only build the grid now.
 
   const grid = $('categoryGrid');
   grid.innerHTML = '';
@@ -628,8 +612,14 @@ function setupCategoryBrowse(){
     applyCatTheme(tile, c);
     tile.innerHTML = `<div class="category-title">${escapeHtml(displayCategory(c))}</div><div class="category-count">${count} services</div>`;
     tile.addEventListener('click', ()=>{
-      $('categoryFilter').value = c;
-      $('q').value = '';
+      // Removed dropdown sync
+      // $('categoryFilter').value = c; 
+      
+      // Instead, we just search for the category name as a string?
+      // Or we can assume clicking a tile acts like a quick keyword search for that category
+      // The previous behavior was setting a filter. Since the filter dropdown is gone, 
+      // we can set the search box to the category name.
+      $('q').value = c;
       search();
       window.scrollTo({top:0, behavior:'smooth'});
     });
@@ -640,11 +630,15 @@ function setupCategoryBrowse(){
 function setupQuickChips(){
   const wrap = $('quickChips');
   wrap.innerHTML='';
-  for(const ch of QUICK_CHIPS){
+  for(const word of KEYWORDS){
     const b = document.createElement('button');
     b.className='chip';
-    b.textContent = ch.label;
-    b.addEventListener('click', ()=>{ $('q').value = ch.q; search(); });
+    b.textContent = word;
+    // When clicked, paste into search field and search immediately
+    b.addEventListener('click', ()=>{ 
+      $('q').value = word; 
+      search(); 
+    });
     wrap.appendChild(b);
   }
 }
@@ -672,7 +666,7 @@ function setupHelp(){
 
 function resetAll(){
   $('q').value='';
-  $('categoryFilter').value='';
+  // $('categoryFilter').value=''; // Element removed
   $('costFilter').value='';
   $('patientNote').value='';
   selected=[];
@@ -692,11 +686,15 @@ async function init(){
   setupToggles();
   setupHelp();
 
-  $('q').addEventListener('input', debounce(search, 250));
-  $('q').addEventListener('keydown', (e)=>{ if(e.key==='Enter') search(); });
-  $('categoryFilter').addEventListener('change', search);
+  // Search Button removed, so we add live search on input
+  // and maintain Enter key support
+  const qBox = $('q');
+  qBox.addEventListener('input', search); 
+  qBox.addEventListener('keydown', (e)=>{ if(e.key==='Enter') search(); });
+  
+  // $('categoryFilter').addEventListener('change', search); // Element removed
   $('costFilter').addEventListener('change', search);
-  $('btnBrowseAll').addEventListener('click', ()=>{ $('q').value=''; $('categoryFilter').value=''; $('costFilter').value=''; search(); });
+  $('btnBrowseAll').addEventListener('click', ()=>{ $('q').value=''; $('costFilter').value=''; search(); });
 
   $('btnCopy').addEventListener('click', copyToClipboard);
   $('btnPrint').addEventListener('click', printSelected);
