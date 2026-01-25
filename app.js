@@ -22,7 +22,8 @@
       <div class="search-card">
         <label class="label" for="q">Patient presentation / what are they looking for?</label>
         <div class="search-row">
-          <input id="q" type="search" placeholder="e.g., anxiety and panic attacks, struggling with alcohol, housing advice, carer support…" autocomplete="off" style="width: 100%;" />
+          <input id="q" type="search" placeholder="e.g., anxiety and panic attacks, struggling with alcohol, housing advice, carer support…" autocomplete="off" />
+          <button id="btnSearch" class="btn btn-primary">Search</button>
         </div>
         <div class="filters">
           <div class="chip-group" id="quickChips" aria-label="Quick chips"></div>
