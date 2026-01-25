@@ -20,21 +20,22 @@
   <main class="layout">
     <section class="panel panel-left" aria-label="Search and browse">
       <div class="search-card">
-        <label class="label" for="q">Patient presentation / what are they looking for?</label>
+        <label class="label" for="q">Search services by keyword</label>
         <div class="search-row">
-          <input id="q" type="search" placeholder="e.g., anxiety and panic attacks, struggling with alcohol, housing advice, carer support…" autocomplete="off" />
-          <button id="btnSearch" class="btn btn-primary">Search</button>
+          <input id="q" type="search" placeholder="Type or click a keyword below..." autocomplete="off" />
+          <!-- Search button removed as requested -->
         </div>
+        
         <div class="filters">
-          <div class="chip-group" id="quickChips" aria-label="Quick chips"></div>
+          <!-- Keywords Area -->
+          <div class="chip-group" id="quickChips" aria-label="Keywords"></div>
+          
           <div class="filter-row">
-            <label class="label" for="categoryFilter">Category</label>
-            <select id="categoryFilter"></select>
-          </div>
-          <div class="filter-row">
-            <label class="label" for="costFilter">Cost</label>
+            <!-- Category Dropdown removed as requested -->
+            <!-- Cost filter remains as it wasn't requested to be removed -->
+            <label class="label" for="costFilter">Filter by Cost</label>
             <select id="costFilter">
-              <option value="">Any</option>
+              <option value="">Any cost</option>
               <option value="Free">Free</option>
               <option value="Means Tested">Means Tested</option>
               <option value="Charity Fee">Charity Fee</option>
@@ -103,7 +104,7 @@
   <dialog id="helpDialog" class="modal">
     <h3>How to use</h3>
     <ul>
-      <li>Type a patient’s needs in plain language and press <b>Search</b>.</li>
+      <li>Type a keyword or click one of the tags to find services.</li>
       <li>Open a service card to view the full description (as written in the source document).</li>
       <li>Use <b>Add</b> to include services in the patient output. You can edit text before sharing.</li>
       <li>Use the <b>Hyperlink / Plain text</b> toggle to control how links appear in the final output.</li>
