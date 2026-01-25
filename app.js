@@ -49,6 +49,14 @@ const QUICK_CHIPS = [
 
 function $(id){ return document.getElementById(id); }
 
+function debounce(func, timeout = 300) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { func.apply(this, args); }, timeout);
+  };
+}
+
 function escapeHtml(s){
   return (s ?? '').toString()
     .replaceAll('&','&amp;')
@@ -685,6 +693,7 @@ async function init(){
   setupHelp();
 
   $('btnSearch').addEventListener('click', search);
+  $('q').addEventListener('input', debounce(search, 250));
   $('q').addEventListener('keydown', (e)=>{ if(e.key==='Enter') search(); });
   $('categoryFilter').addEventListener('change', search);
   $('costFilter').addEventListener('change', search);
