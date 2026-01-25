@@ -91,6 +91,7 @@ input[type=search]{width:100%;padding:12px 12px;border:1px solid var(--border);b
 input[type=search]:focus{border-color:var(--mid);box-shadow:0 0 0 3px rgba(0,114,206,.15)}
 textarea{width:100%;padding:10px;border:1px solid var(--border);border-radius:12px;font-size:14px;outline:none;resize:vertical}
 
+/* Modified search row to accommodate full width input now that button is gone */
 .search-row{display:flex;gap:10px;align-items:center}
 
 .btn{border:1px solid var(--border);background:#fff;color:var(--dark);padding:10px 12px;border-radius:12px;font-weight:600;cursor:pointer}
@@ -101,7 +102,8 @@ textarea{width:100%;padding:10px;border:1px solid var(--border);border-radius:12
 .btn-toggle{padding:8px 10px;font-weight:700}
 .btn-toggle[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#fff}
 
-.filters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+/* Filters: only one column for chips (now keywords) and cost filter */
+.filters{margin-top:12px; display:flex; flex-direction:column; gap:12px}
 .filter-row select{width:100%;padding:10px;border:1px solid var(--border);border-radius:12px}
 
 .chip-group{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px}
